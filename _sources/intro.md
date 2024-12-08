@@ -9,9 +9,10 @@ Pada Notebook Ini terdapat 3 proyek sains data yang berjudul "
 - PREDIKSI DETAK JANTUNG UNTUK DETEKSI DINI KEGAGALAN JANTUNG PASIEN KOGNESTIF BERAT
 
 Semua hasil proyek diatas bisa diakses di link dibawah ini :
-`<Project1>` : <https://huggingface.co/spaces/ahmadnoval/PSD-rediksi-produksi-beras>
-`<Project2>` : <https://huggingface.co/spaces/ahmadnoval/PSD-Co2-Emmision>
-`<Project3>` : <https://huggingface.co/spaces/ahmadnoval/PSD-Prediksi-detak-jantung-pasien>
+
+- `<Project1>` : <https://huggingface.co/spaces/ahmadnoval/PSD-rediksi-produksi-beras>
+- `<Project2>` : <https://huggingface.co/spaces/ahmadnoval/PSD-Co2-Emmision>
+- `<Project3>` : <https://huggingface.co/spaces/ahmadnoval/PSD-Prediksi-detak-jantung-pasien>
 
 
 
