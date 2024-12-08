@@ -1,0 +1,3365 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU &#8212; PSD-Tugas Akhir</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Project2';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PROYEK SAINS DATA PREDIKSI DETAK JANTUNG UNTUK DETEKSI DINI KEGAGALAN JANTUNG PASIEN KOGNESTIF BERAT" href="Project3.html" />
+    <link rel="prev" title="PROYEK SAINS DATA PREDIKSI PRODUKSI PADI KOTA SURABAYA MENGGUNAKAN DATA CUACA UNTUK MENSTABILKAN KETAHANAN PANGAN" href="Project1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/portofolio.png" class="logo__image only-light" alt="PSD-Tugas Akhir - Home"/>
+    <script>document.write(`<img src="_static/portofolio.png" class="logo__image only-dark" alt="PSD-Tugas Akhir - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Tugas Akir Proyek Sains Data
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Project1.html">PROYEK SAINS DATA PREDIKSI PRODUKSI PADI KOTA SURABAYA MENGGUNAKAN DATA CUACA UNTUK MENSTABILKAN KETAHANAN PANGAN</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Project3.html">PROYEK SAINS DATA PREDIKSI DETAK JANTUNG UNTUK DETEKSI DINI KEGAGALAN JANTUNG PASIEN KOGNESTIF BERAT</a></li>
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProject2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Project2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bisnis-understanding">Bisnis Understanding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis">2. Tujuan Analisis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-data">Read Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview">Data overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">Kualitas Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">Outlier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-stasioner">Uji stasioner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-uji-stasioner-manual">Contoh uji stasioner manual</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-stasioneritas-menggunakan-uji-adf-dan-perhitungan-manual">Uji Stasioneritas Menggunakan Uji ADF dan Perhitungan Manual</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">1. Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-perubahan-nilai-differencing">2. Menghitung Perubahan Nilai (Differencing)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-model-autoregressive-ar">3. Menyusun Model Autoregressive (AR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-variabel-waktu-t">3.1. Menambahkan Variabel Waktu (t)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-variabel-lag">3.2. Menambahkan Variabel Lag</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-persamaan-regresi-linier">4. Menyusun Persamaan Regresi Linier</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-desain">4.1. Menyusun Matriks Desain</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-koefisien-regresi">4.2. Menghitung Koefisien Regresi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-regresi">4.3. Hasil Regresi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menginterpretasikan-hasil-uji-stasioneritas">5. Menginterpretasikan Hasil Uji Stasioneritas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing">Data prepocessing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolasi-outlier">interpolasi outlier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stasionerisasi-data-untuk-model-arima-sarima">Stasionerisasi data untuk model arima sarima</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sliding-windows-time-series-untuk-selain-arima">Sliding Windows Time Series untuk selain arima</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">Data Modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ridge-regression">Ridge regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest-regressor">Random Forest Regressor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svr">SVR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron">Multi layer perceptron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron-mlp">Multi-Layer Perceptron (MLP)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-model-selain-arima-sarima">Hasil Model selain Arima Sarima</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#percobaan-dengan-arima-sarima">Percobaan dengan Arima Sarima</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-dengan-model-arima">Prediksi dengan model ARIMA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-aic-dalam-model-arima">Penjelasan AIC dalam Model ARIMA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-rumus">Definisi Rumus:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-nilai-aic">Interpretasi Nilai AIC:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-berdasarkan-aic">Pemilihan Model Berdasarkan AIC:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-output-model-sarimax-arima-3-0-2">Penjelasan Output Model SARIMAX (ARIMA(3, 0, 2))</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-model"><strong>1. Ringkasan Model</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimasi-parameter"><strong>2. Estimasi Parameter</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-parameter">Penjelasan Parameter:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-diagnostik"><strong>3. Uji Diagnostik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi"><strong>4. Interpretasi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-sarima">Model SARIMA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">Deployement</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-model">Menyimpan model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website">Website</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="proyek-sains-data-prediksi-emisi-co2-per-tahun-negara-indonesia-berdasarkan-pola-waktu">
+<h1>PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU<a class="headerlink" href="#proyek-sains-data-prediksi-emisi-co2-per-tahun-negara-indonesia-berdasarkan-pola-waktu" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="bisnis-understanding">
+<h1>Bisnis Understanding<a class="headerlink" href="#bisnis-understanding" title="Link to this heading">#</a></h1>
+<section id="pendahuluan">
+<h2>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Perubahan iklim merupakan isu global yang semakin mendesak, di mana gas rumah kaca seperti karbon dioksida (CO2) berperan sebagai penyebab utama pemanasan global. Indonesia, yang merupakan salah satu negara dengan jumlah penduduk terbanyak dan pertumbuhan ekonomi cepat di Asia Tenggara, memainkan peran penting dalam emisi CO2 secara global. Penyebab utama emisi CO2 di Indonesia berasal dari sektor energi, transportasi, dan pembakaran lahan. Mengacu pada signifikansi peran Indonesia di kancah internasional, pengawasan dan pengelolaan emisi CO2 sangat krusial untuk mendukung tindakan mitigasi perubahan iklim.</p>
+<p>Perlu dicatat bahwa emisi CO2 di Indonesia menunjukkan variasi tahunan yang dipengaruhi oleh faktor musiman, perubahan ekonomi, serta kebijakan pemerintah yang diterapkan di berbagai sektor. Oleh karena itu, perlu diadakan analisis untuk memahami pola perubahan emisi CO2 dalam jangka waktu tertentu, yang dapat dimanfaatkan untuk memprediksi tren emisi di masa depan.</p>
+<p>Namun, untuk meramalkan emisi CO2 di Indonesia, metode yang umumnya dipakai adalah model univariate, yang hanya bergantung pada data historis emisi CO2 itu sendiri sebagai variabel utama. Pendekatan ini memungkinkan pengenalan pola atau tren yang ada tanpa mempertimbangkan variabel eksternal lainnya, seperti kondisi ekonomi atau kebijakan pemerintah, yang meskipun krusial, sering kali sukar untuk diprediksi secara tepat.</p>
+<p>Emisi CO2 dalam pendekatan univariate ini akan dianalisis melalui pola waktu (time series), yang bertujuan untuk mengidentifikasi pola tahunan atau musiman dalam emisi CO2. Model ini tidak secara langsung memperhitungkan faktor eksternal, tetapi mampu mengidentifikasi pola dan tren yang ada dalam data historis CO2, sehingga dapat dimanfaatkan untuk memprediksi emisi CO2 di tahun-tahun yang akan datang.</p>
+</section>
+<section id="tujuan-analisis">
+<h2>2. Tujuan Analisis<a class="headerlink" href="#tujuan-analisis" title="Link to this heading">#</a></h2>
+<p>Proyek ini bertujuan untuk membangun model prediksi univariate yang mampu meramalkan tingkat emisi CO2 per tahun di Indonesia berdasarkan data historis emisi CO2 itu sendiri. Model ini akan mengidentifikasi pola waktu yang ada dalam data emisi CO2 dan menggunakannya untuk membuat proyeksi ke depan, membantu perencanaan kebijakan lingkungan yang lebih efisien dan berbasis data. Selain itu, tujuan lainnya adalah untuk:</p>
+<ul class="simple">
+<li><p>Menyediakan prediksi tahunan emisi CO2 yang lebih akurat berdasarkan data historis yang tersedia.</p></li>
+<li><p>Membantu pihak terkait dalam merancang strategi mitigasi perubahan iklim yang lebih tepat dan berbasis pada data.</p></li>
+</ul>
+<p>Dengan pendekatan univariate ini, proyek diharapkan dapat memberikan kontribusi dalam pengembangan sistem prediksi emisi CO2 yang lebih efisien, sehingga lebih efektif dalam memantau dan mengurangi dampak perubahan iklim.</p>
+<p>Data yang akan dipakai adalah data emisi co2 per kapita negara indonesia dari tahun 1889 sampai 2023
+yang diambil dari Website Our World in data <a class="reference external" href="https://ourworldindata.org/co2/country/indonesia">https://ourworldindata.org/co2/country/indonesia</a> yang dimana data diambil dalam satuan TON</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding">
+<h1>Data Understanding<a class="headerlink" href="#data-understanding" title="Link to this heading">#</a></h1>
+<section id="read-data">
+<h2>Read Data<a class="headerlink" href="#read-data" title="Link to this heading">#</a></h2>
+<p>Disini saya mengambil data yang sudah saya download dalam bentuk csv dan memasukkannya kedalam dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># type: ignore</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># type: ignore</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./owid-co2-data.csv&#39;</span><span class="p">)</span>
+
+<span class="n">indonesia_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Indonesia&#39;</span><span class="p">]</span>
+
+<span class="n">indonesia_co2</span> <span class="o">=</span> <span class="n">indonesia_data</span><span class="p">[[</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;co2&#39;</span><span class="p">]]</span>
+<span class="n">df_main</span> <span class="o">=</span> <span class="n">indonesia_co2</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df_main</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>co2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1889</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1890</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1891</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1892</td>
+      <td>0.191</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1893</td>
+      <td>0.403</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>2016</td>
+      <td>560.846</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>2017</td>
+      <td>575.176</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>2018</td>
+      <td>614.884</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>2019</td>
+      <td>660.594</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>2020</td>
+      <td>589.500</td>
+    </tr>
+  </tbody>
+</table>
+<p>132 rows × 2 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="data-overview">
+<h2>Data overview<a class="headerlink" href="#data-overview" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># type: ignore</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># type: ignore</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 132 entries, 0 to 131
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   year    132 non-null    int64  
+ 1   co2     132 non-null    float64
+dtypes: float64(1), int64(1)
+memory usage: 2.2 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>co2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>132.000000</td>
+      <td>132.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1954.500000</td>
+      <td>109.090576</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>38.249183</td>
+      <td>166.777145</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1889.000000</td>
+      <td>0.004000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1921.750000</td>
+      <td>7.511250</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1954.500000</td>
+      <td>22.393000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1987.250000</td>
+      <td>125.827000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2020.000000</td>
+      <td>660.594000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>pada data saya ini terdapat 2 kolom fitur yaitu year dan co2 dengan data numerik</p>
+<ul class="simple">
+<li><p>year (dalam tahun)</p></li>
+<li><p>co2 (dalam ton)</p></li>
+</ul>
+<p>saya akan coba melihat pola pada dataset</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;CO2 Emissions in Indonesia (1950 - Latest Year)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;CO2 Emissions (in metric tons)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9937ec5e3cc0ca264beccd8aa7ed4e6d1d763e97ca2ec28678065d19f5081638.png" src="_images/9937ec5e3cc0ca264beccd8aa7ed4e6d1d763e97ca2ec28678065d19f5081638.png" />
+</div>
+</div>
+<p>sepertinya per tahun data emisi co2 terus meningkat signifikan, walaupun ada beberapa tahun tertentu yang terlihat turun</p>
+</section>
+<section id="kualitas-data">
+<h2>Kualitas Data<a class="headerlink" href="#kualitas-data" title="Link to this heading">#</a></h2>
+<section id="missing-value">
+<h3>Missing Value<a class="headerlink" href="#missing-value" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Missing values in dataset:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_main</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing values in dataset:
+year    0
+co2     0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tidak ada missing value pada dataset ini</p>
+</section>
+<section id="outlier">
+<h3>Outlier<a class="headerlink" href="#outlier" title="Link to this heading">#</a></h3>
+<p>saya akan mencoba beberapa cara untuk mendeteksi outlier disini</p>
+<ol class="arabic simple">
+<li><p>Metode BoxPlot</p></li>
+</ol>
+<p>Boxplot, juga dikenal sebagai box plot atau box-and-whisker plot, adalah cara standar untuk menampilkan distribusi kumpulan data berdasarkan ringkasan lima angka titik data: “minimum”, kuartil pertama [Q1], median, kuartil ketiga [Q3] dan “maksimum”. Berikut ini contohnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> <span class="c1"># type: ignore</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_main</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;co2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot of CO2 Emissions&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/c2df3c916bfe29586965b6eda47b03049ec423d090d90425a8af5b952dc71459.png" src="_images/c2df3c916bfe29586965b6eda47b03049ec423d090d90425a8af5b952dc71459.png" />
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Dengan Z-Score</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hitung Z-Score</span>
+<span class="n">mean_co2</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">std_co2</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;z_score&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_co2</span><span class="p">)</span> <span class="o">/</span> <span class="n">std_co2</span>
+
+<span class="n">outliers_zscore</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;z_score&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outliers detected (Z-Score):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">outliers_zscore</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Outliers detected (Z-Score):
+     year      co2   z_score
+129  2018  614.884  3.032750
+130  2019  660.594  3.306829
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Arima</p></li>
+</ol>
+<p>Model ARIMA bekerja dengan membuat prediksi nilai-nilai masa depan (atau nilai yang ada) berdasarkan pola historis dalam data time series. Prediksi ini mencerminkan pola trend, seasonality, dan noise dalam data.</p>
+<p>Outlier dapat diidentifikasi jika ada nilai aktual yang secara signifikan menyimpang dari nilai yang diprediksi oleh model ARIMA, yang berarti nilai tersebut tidak sesuai dengan pola yang dipelajari oleh model.</p>
+<p>Residual sebagai Indikator Penyimpangan
+Residuals didefinisikan sebagai selisih antara nilai aktual data (df_main[‘co2’]) dan nilai yang diprediksi oleh model (fitted_values):</p>
+<p>Residual= Nilai Aktual−Nilai yang Diprediksi</p>
+<p>Jika model ARIMA telah dilatih dengan baik, maka residual seharusnya kecil dan mengikuti distribusi normal sekitar nilai nol (tidak bias).</p>
+<p>Nilai residual yang sangat besar (di luar rentang normal) menunjukkan bahwa model ARIMA tidak dapat menjelaskan data tersebut, sehingga mengindikasikan outlier.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pmdarima</span> <span class="kn">import</span> <span class="n">auto_arima</span> <span class="c1"># type: ignore</span>
+
+
+<span class="c1"># Fit auto_arima model</span>
+<span class="n">auto_model</span> <span class="o">=</span> <span class="n">auto_arima</span><span class="p">(</span>
+    <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span>
+    <span class="n">seasonal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">stepwise</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">suppress_warnings</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">fitted_values</span> <span class="o">=</span> <span class="n">auto_model</span><span class="o">.</span><span class="n">predict_in_sample</span><span class="p">()</span>
+<span class="n">residuals</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">fitted_values</span>
+<span class="n">residual_mean</span> <span class="o">=</span> <span class="n">residuals</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">residual_std</span> <span class="o">=</span> <span class="n">residuals</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="c1"># Detect outliers: residuals greater than 3 times the standard deviation</span>
+<span class="n">outliers_autoarima</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">residual_std</span><span class="p">]</span>
+<span class="n">outliers_autoarima</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">pmdarima</span> <span class="kn">import</span> <span class="n">auto_arima</span> <span class="c1"># type: ignore</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Fit auto_arima model</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">auto_model</span> <span class="o">=</span> <span class="n">auto_arima</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">seasonal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">suppress_warnings</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pmdarima&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dalam statistik, 3-standar deviasi (3σ) sering digunakan untuk mendeteksi data yang tidak wajar berdasarkan asumsi distribusi normal:</p>
+<p>Outlier jika ∣Residual∣&gt;3×Standard Deviation (σ)</p>
+</section>
+</section>
+<section id="uji-stasioner">
+<h2>Uji stasioner<a class="headerlink" href="#uji-stasioner" title="Link to this heading">#</a></h2>
+<p>Kenapa saya menggunakan uji stasioner disini, karena saya juga ingin mencoba model arima nantinya selain model prediksi biasa</p>
+<p>ADF (Augmented Dickey-Fuller) Statistic adalah ukuran statistik yang digunakan dalam ADF test, sebuah uji statistik untuk menentukan apakah suatu time series stasioner atau tidak. ADF statistic adalah nilai yang dihitung dari regresi yang digunakan dalam uji Dickey-Fuller yang diperluas, dengan menambahkan lag-lag dari variabel independen untuk mengatasi autokorelasi pada residual.</p>
+<p>Stasioneritas adalah sifat penting dalam analisis time series, di mana statistik seperti rata-rata, varians, dan autokorelasi tidak berubah seiring waktu. Data yang tidak stasioner dapat menghasilkan hasil analisis yang menyesatkan dalam model statistik dan machine learning.</p>
+<p>Uji Augmented Dickey-Fuller (ADF) adalah uji statistik yang digunakan untuk menentukan apakah suatu data deret waktu (time series) bersifat <strong>stasioner</strong>. Uji ini didasarkan pada model regresi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \sum_{i=1}^p \delta_i \Delta Y_{t-i} + \epsilon_t
+\]</div>
+<p>Keterangan:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t: \text{Selisih pertama (first difference) dari deret waktu, didefinisikan sebagai } Y_t - Y_{t-1}.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\alpha: \text{Konstanta (intercept).}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta t: \text{Komponen tren (opsional).}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\gamma Y_{t-1}: \text{Nilai lag dari deret waktu untuk menguji stasioneritas.}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^p \delta_i \Delta Y_{t-i}: \text{Penjumlahan lag perbedaan (lag differencing terms) untuk mengatasi autokorelasi.}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\epsilon_t: \text{Residual (error term).}
+\]</div>
+<p>Hipotesis nol ((H_0)) dan hipotesis alternatif ((H_1)) dalam uji ADF adalah sebagai berikut:</p>
+<ul class="simple">
+<li><p>(H_0): Deret waktu memiliki akar unit (<strong>non-stasioner</strong>).</p></li>
+<li><p>(H_1): Deret waktu tidak memiliki akar unit (<strong>stasioner</strong>).</p></li>
+</ul>
+<p><strong>Interpretasi:</strong></p>
+<ul class="simple">
+<li><p>Jika nilai statistik ADF lebih kecil daripada nilai kritis dari tabel Dickey-Fuller, maka (H_0) ditolak, dan deret waktu dianggap <strong>stasioner</strong>.</p></li>
+<li><p>Jika nilai statistik ADF lebih besar daripada nilai kritis, maka (H_0) gagal ditolak, dan deret waktu dianggap <strong>non-stasioner</strong>.</p></li>
+</ul>
+<section id="contoh-uji-stasioner-manual">
+<h3>Contoh uji stasioner manual<a class="headerlink" href="#contoh-uji-stasioner-manual" title="Link to this heading">#</a></h3>
+<section id="uji-stasioneritas-menggunakan-uji-adf-dan-perhitungan-manual">
+<h4>Uji Stasioneritas Menggunakan Uji ADF dan Perhitungan Manual<a class="headerlink" href="#uji-stasioneritas-menggunakan-uji-adf-dan-perhitungan-manual" title="Link to this heading">#</a></h4>
+<p>Uji stasioneritas bertujuan untuk menentukan apakah suatu data time series memiliki sifat yang konstan dalam hal rata-rata dan varians sepanjang waktu. Salah satu metode yang umum digunakan untuk uji stasioneritas adalah <strong>Augmented Dickey-Fuller (ADF)</strong> test. Selain itu, perhitungan manual juga dapat digunakan untuk memperkirakan model autoregressive (AR) berdasarkan persamaan differencing berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \sum_{i=1}^p \delta_i \Delta Y_{t-i} + \epsilon_t
+\]</div>
+</section>
+</section>
+<section id="data">
+<h3>1. Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
+<p>Data yang digunakan adalah data emisi CO2 yang tercatat dari tahun 1889 hingga 1893.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+</tr>
+</tbody>
+</table>
+<section id="menghitung-perubahan-nilai-differencing">
+<h4>2. Menghitung Perubahan Nilai (Differencing)<a class="headerlink" href="#menghitung-perubahan-nilai-differencing" title="Link to this heading">#</a></h4>
+<p>Langkah pertama adalah menghitung perubahan nilai atau differencing untuk mendapatkan (\Delta Y_t). Perubahan nilai dihitung dengan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = Y_t - Y_{t-1}
+\]</div>
+<p>Hasil perhitungan differencing adalah sebagai berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+<th class="head"><p>(\Delta Y_t)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+<td><p>0.015 - 0.004 = 0.011</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+<td><p>0.022 - 0.015 = 0.007</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+<td><p>0.191 - 0.022 = 0.169</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+<td><p>0.403 - 0.191 = 0.212</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="menyusun-model-autoregressive-ar">
+<h4>3. Menyusun Model Autoregressive (AR)<a class="headerlink" href="#menyusun-model-autoregressive-ar" title="Link to this heading">#</a></h4>
+<p>Selanjutnya, kita akan menyusun model autoregressive berdasarkan lag 1 $<span class="math notranslate nohighlight">\( \gamma Y\_{t-1} \)</span>$.</p>
+<p>Model yang digunakan adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \epsilon_t
+\]</div>
+</section>
+<section id="menambahkan-variabel-waktu-t">
+<h4>3.1. Menambahkan Variabel Waktu (t)<a class="headerlink" href="#menambahkan-variabel-waktu-t" title="Link to this heading">#</a></h4>
+<p>Untuk memasukkan komponen waktu ((t)) dalam model, kita perlu membuat variabel waktu berdasarkan tahun. Variabel (t) dihitung dengan cara mengurangi tahun dengan tahun pertama (1889):</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+<th class="head"><p>(t)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="menambahkan-variabel-lag">
+<h4>3.2. Menambahkan Variabel Lag<a class="headerlink" href="#menambahkan-variabel-lag" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[ \gamma Y\_{t-1} \]</div>
+<p>Lag adalah nilai CO2 pada tahun sebelumnya. Kita menambahkan kolom (Y_{t-1}) yang merupakan nilai CO2 pada tahun sebelumnya:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+<th class="head"><p>(Y_{t-1})</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+<td><p>0.004</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+<td><p>0.015</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+<td><p>0.022</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+<td><p>0.191</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="menyusun-persamaan-regresi-linier">
+<h4>4. Menyusun Persamaan Regresi Linier<a class="headerlink" href="#menyusun-persamaan-regresi-linier" title="Link to this heading">#</a></h4>
+<p>Selanjutnya, kita akan menyusun persamaan regresi linier untuk menghitung koefisien (\alpha), (\beta), dan (\gamma). Persamaan regresi yang digunakan adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \epsilon_t
+\]</div>
+<p>Dengan data yang telah disusun, kita akan melakukan perhitungan regresi linier menggunakan <strong>metode kuadrat terkecil</strong> (least squares method). Untuk persamaan linier ini, kita akan menghitung nilai untuk (\alpha), (\beta), dan (\gamma) secara manual dengan mengikuti langkah-langkah berikut:</p>
+</section>
+<section id="menyusun-matriks-desain">
+<h4>4.1. Menyusun Matriks Desain<a class="headerlink" href="#menyusun-matriks-desain" title="Link to this heading">#</a></h4>
+<p>Matriks desain untuk regresi linier adalah matriks yang memuat nilai variabel bebas (t) dan (Y_{t-1}), serta konstanta untuk menghitung (\alpha).</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Const</p></th>
+<th class="head"><p>(t)</p></th>
+<th class="head"><p>(Y_{t-1})</p></th>
+<th class="head"><p>(\Delta Y_t)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>0.004</p></td>
+<td><p>0.011</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0.015</p></td>
+<td><p>0.007</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>3</p></td>
+<td><p>0.022</p></td>
+<td><p>0.169</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>0.191</p></td>
+<td><p>0.212</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Catatan:</strong> Kolom “Const” diisi dengan angka 1 untuk konstanta (\alpha).</p>
+</section>
+<section id="menghitung-koefisien-regresi">
+<h4>4.2. Menghitung Koefisien Regresi<a class="headerlink" href="#menghitung-koefisien-regresi" title="Link to this heading">#</a></h4>
+<p>Sekarang, kita akan menghitung koefisien (\alpha), (\beta), dan (\gamma) menggunakan rumus regresi linier klasik. Karena regresi linier melibatkan sistem persamaan, kita akan menyelesaikan sistem ini dengan metode <strong>kuadrat terkecil</strong>. Secara umum, langkah-langkah perhitungannya adalah:</p>
+<ol class="arabic simple">
+<li><p>Menyusun matriks desain (X) dan vektor target (Y),</p></li>
+<li><p>Menghitung matriks transpos (X^T) dan hasil perkaliannya dengan (X),</p></li>
+<li><p>Menghitung hasil perkalian (X^T \cdot Y),</p></li>
+<li><p>Menyelesaikan persamaan matriks untuk mendapatkan koefisien (\alpha), (\beta), dan (\gamma).</p></li>
+</ol>
+<p>Namun, karena perhitungan manual yang melibatkan matriks dan invers cukup rumit, biasanya langkah ini dilakukan menggunakan perangkat lunak statistik atau kalkulator matriks. Jika Anda melanjutkan secara manual, Anda perlu menyusun sistem persamaan dan menyelesaikannya.</p>
+</section>
+<section id="hasil-regresi">
+<h4>4.3. Hasil Regresi<a class="headerlink" href="#hasil-regresi" title="Link to this heading">#</a></h4>
+<p>Setelah melakukan regresi linier, Anda akan mendapatkan nilai untuk (\alpha), (\beta), dan (\gamma), yang kemudian dapat dimasukkan ke dalam persamaan regresi:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = \alpha + \beta t + \gamma Y_{t-1} + \epsilon_t
+\]</div>
+</section>
+<section id="menginterpretasikan-hasil-uji-stasioneritas">
+<h4>5. Menginterpretasikan Hasil Uji Stasioneritas<a class="headerlink" href="#menginterpretasikan-hasil-uji-stasioneritas" title="Link to this heading">#</a></h4>
+<p>Setelah menghitung koefisien (\alpha), (\beta), dan (\gamma), Anda dapat menggunakan uji ADF untuk menguji apakah data time series Anda stasioner. Uji ADF memberikan nilai statistik uji dan p-value, yang dapat digunakan untuk memutuskan apakah data tersebut stasioner atau tidak:</p>
+<ul class="simple">
+<li><p>Jika p-value &gt; 0.05, data tidak stasioner.</p></li>
+<li><p>Jika p-value &lt; 0.05, data stasioner.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">adfuller</span> <span class="c1"># type: ignore</span>
+
+<span class="c1"># Uji ADF</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADF Statistic:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-value:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Critical Values:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data tidak stasioner.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data sudah stasioner.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic: 2.0058563810341896
+p-value: 0.9986805127735741
+Critical Values: {&#39;1%&#39;: -3.4870216863700767, &#39;5%&#39;: -2.8863625166643136, &#39;10%&#39;: -2.580009026141913}
+Data tidak stasioner.
+</pre></div>
+</div>
+</div>
+</div>
+<p>P-value dibandingkan dengan tingkat signifikansi 5% (0.05). Jika p-value lebih besar dari 0.05, maka hipotesis nol (𝐻0) tidak ditolak, yang berarti data dianggap tidak stasioner.
+Jika p-value lebih kecil dari 0.05, hipotesis nol (𝐻0) ditolak, sehingga data dianggap stasioner.</p>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-prepocessing">
+<h1>Data prepocessing<a class="headerlink" href="#data-prepocessing" title="Link to this heading">#</a></h1>
+<section id="interpolasi-outlier">
+<h2>interpolasi outlier<a class="headerlink" href="#interpolasi-outlier" title="Link to this heading">#</a></h2>
+<p>disini karena saya menemukan outlier sebelumnya, saya akan mengubah nilainya berdasarkan rumus interpolasi</p>
+<div class="math notranslate nohighlight">
+\[
+f(x) = f(x_0) + \frac{f(x_1) - f(x_0)}{x_1 - x_0} \cdot (x - x_0)
+\]</div>
+<p>Penjelasan :</p>
+<ul class="simple">
+<li><p>( x_0, x_1 ): Titik-titik data pada sumbu ( x ) yang diketahui.</p></li>
+<li><p>( f(x_0), f(x_1) ): Nilai fungsi di ( x_0 ) dan ( x_1 ).</p></li>
+<li><p>( x ): Titik yang ingin diinterpolasi (di antara ( x_0 ) dan ( x_1 )).</p></li>
+<li><p>( f(x) ): Nilai interpolasi pada ( x ).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">109</span><span class="p">,</span> <span class="s1">&#39;co2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>  
+<span class="n">df_main</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">131</span><span class="p">,</span> <span class="s1">&#39;co2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sebelum perubahan:&quot;</span><span class="p">,</span> <span class="n">df_main</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">109</span><span class="p">,</span><span class="mi">131</span><span class="p">],</span> <span class="s1">&#39;co2&#39;</span><span class="p">])</span>
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sesudah perubahan:&quot;</span><span class="p">,</span> <span class="n">df_main</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">109</span><span class="p">,</span><span class="mi">131</span><span class="p">],</span> <span class="s1">&#39;co2&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sebelum perubahan: 109   NaN
+131   NaN
+Name: co2, dtype: float64
+Sesudah perubahan: 109    262.342
+131    660.594
+Name: co2, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;CO2 Emissions in Indonesia (1950 - Latest Year)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;CO2 Emissions (in metric tons)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ca9b39aa461b91a8f54cde07776bde6be9d3865b427d585dad67d0d9898b0a0c.png" src="_images/ca9b39aa461b91a8f54cde07776bde6be9d3865b427d585dad67d0d9898b0a0c.png" />
+</div>
+</div>
+</section>
+<section id="stasionerisasi-data-untuk-model-arima-sarima">
+<h2>Stasionerisasi data untuk model arima sarima<a class="headerlink" href="#stasionerisasi-data-untuk-model-arima-sarima" title="Link to this heading">#</a></h2>
+<p>Differencing adalah metode sederhana untuk membuat data stasioner dengan menghitung perbedaan antara nilai saat ini (𝑌𝑡) dan nilai sebelumnya (𝑌𝑡−1).</p>
+<p>Stasionerisasi Data dengan Differencing</p>
+<ol class="arabic simple">
+<li><p>Pengertian Stasionerisasi Data
+Stasionerisasi data adalah proses transformasi data time series menjadi bentuk yang stasioner, yaitu data yang memiliki rata-rata, varians, dan kovarians yang konstan sepanjang waktu. Data yang stasioner sangat penting dalam analisis time series, terutama untuk model-model statistik seperti ARIMA (Autoregressive Integrated Moving Average).</p></li>
+</ol>
+<p>Salah satu cara untuk membuat data menjadi stasioner adalah dengan melakukan <strong>differencing</strong>, yang merupakan proses menghitung selisih antara nilai data pada waktu (t) dan waktu (t-1). Jika data tidak stasioner (misalnya ada tren), differencing dapat membantu menghilangkan tren tersebut.</p>
+<p>Proses differencing dilakukan dengan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = Y_t - Y_{t-1}
+\]</div>
+<p>Dimana:</p>
+<ul class="simple">
+<li><p>(Y_t) adalah nilai data pada waktu (t),</p></li>
+<li><p>(Y_{t-1}) adalah nilai data pada waktu sebelumnya (t-1),</p></li>
+<li><p>(\Delta Y<em>t) adalah perubahan (differencing) antara nilai (Y_t) dan (Y</em>{t-1}).</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Langkah-langkah Stasionerisasi Data</p></li>
+</ol>
+<p>2.1. Perhitungan Manual Differencing
+Misalkan kita memiliki data CO2 yang tercatat setiap tahun sebagai berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+</tr>
+</tbody>
+</table>
+<p>Untuk melakukan differencing, kita hitung perubahan nilai CO2 dari satu tahun ke tahun berikutnya menggunakan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta Y_t = Y_t - Y_{t-1}
+\]</div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>CO2</p></th>
+<th class="head"><p>(\Delta Y<em>t = Y_t - Y</em>{t-1})</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1889</p></td>
+<td><p>0.004</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>1890</p></td>
+<td><p>0.015</p></td>
+<td><p>0.015 - 0.004 = 0.011</p></td>
+</tr>
+<tr class="row-even"><td><p>1891</p></td>
+<td><p>0.022</p></td>
+<td><p>0.022 - 0.015 = 0.007</p></td>
+</tr>
+<tr class="row-odd"><td><p>1892</p></td>
+<td><p>0.191</p></td>
+<td><p>0.191 - 0.022 = 0.169</p></td>
+</tr>
+<tr class="row-even"><td><p>1893</p></td>
+<td><p>0.403</p></td>
+<td><p>0.403 - 0.191 = 0.212</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dari tabel di atas, kita memperoleh <strong>data yang sudah ter-stasionerkan</strong> (differenced data).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+
+<span class="c1"># Plot data setelah differencing</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Differenced Data&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Differenced CO2 Data&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Differenced CO2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/8bcc14a6c56ec6c3e1a6274d1c3c7ef18fc7b198f4077133e424a4cf4da84420.png" src="_images/8bcc14a6c56ec6c3e1a6274d1c3c7ef18fc7b198f4077133e424a4cf4da84420.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result_diff</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADF Statistic (Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-value (Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Critical Values (Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">result_diff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data setelah differencing masih tidak stasioner.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data setelah differencing sudah stasioner.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic (Differenced): 1.055366761995386
+p-value (Differenced): 0.9948171036738845
+Critical Values (Differenced): {&#39;1%&#39;: -3.487517288664615, &#39;5%&#39;: -2.8865777180380032, &#39;10%&#39;: -2.5801239192052012}
+Data setelah differencing masih tidak stasioner.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Differencing kedua</span>
+<span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+
+<span class="c1"># Plot data differencing kedua</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Second Differenced Data&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Second Differenced CO2 Data&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Second Differenced CO2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">result_diff2</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADF Statistic (Second Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-value (Second Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Critical Values (Second Differenced):&quot;</span><span class="p">,</span> <span class="n">result_diff2</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">result_diff2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data setelah differencing kedua masih tidak stasioner.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data setelah differencing kedua sudah stasioner.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f2fef6b41d6ac97fffb2f88fd835b69939fe79edb19d7d871b17422bce91ccce.png" src="_images/f2fef6b41d6ac97fffb2f88fd835b69939fe79edb19d7d871b17422bce91ccce.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic (Second Differenced): -5.323172897103839
+p-value (Second Differenced): 4.901812975543979e-06
+Critical Values (Second Differenced): {&#39;1%&#39;: -3.4880216384691867, &#39;5%&#39;: -2.8867966864160075, &#39;10%&#39;: -2.5802408234244947}
+Data setelah differencing kedua sudah stasioner.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 132 entries, 0 to 131
+Data columns (total 5 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   year       132 non-null    int64  
+ 1   co2        132 non-null    float64
+ 2   z_score    132 non-null    float64
+ 3   co2_diff   131 non-null    float64
+ 4   co2_diff2  130 non-null    float64
+dtypes: float64(4), int64(1)
+memory usage: 5.3 KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="sliding-windows-time-series-untuk-selain-arima">
+<h2>Sliding Windows Time Series untuk selain arima<a class="headerlink" href="#sliding-windows-time-series-untuk-selain-arima" title="Link to this heading">#</a></h2>
+<p>untuk model selain Arima sarima karena data ini univariate saya menggunakan sliding windows timeseries untuk menciptakan data supervised dengan 3 lag tahun sebelumnya sebagai fitur</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">window_size</span> <span class="o">=</span> <span class="mi">3</span> 
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">df_main</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;lag_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+
+<span class="n">df_main_lagged</span> <span class="o">=</span> <span class="n">df_main</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="c1"># Tampilkan dataset baru</span>
+<span class="n">df_main_lagged</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>co2</th>
+      <th>z_score</th>
+      <th>co2_diff</th>
+      <th>co2_diff2</th>
+      <th>lag_1</th>
+      <th>lag_2</th>
+      <th>lag_3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>1892</td>
+      <td>0.191</td>
+      <td>-0.652965</td>
+      <td>0.169</td>
+      <td>0.162</td>
+      <td>0.022</td>
+      <td>0.015</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1893</td>
+      <td>0.403</td>
+      <td>-0.651693</td>
+      <td>0.212</td>
+      <td>0.043</td>
+      <td>0.191</td>
+      <td>0.022</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1894</td>
+      <td>0.480</td>
+      <td>-0.651232</td>
+      <td>0.077</td>
+      <td>-0.135</td>
+      <td>0.403</td>
+      <td>0.191</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1895</td>
+      <td>0.769</td>
+      <td>-0.649499</td>
+      <td>0.289</td>
+      <td>0.212</td>
+      <td>0.480</td>
+      <td>0.403</td>
+      <td>0.191</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1896</td>
+      <td>0.861</td>
+      <td>-0.648947</td>
+      <td>0.092</td>
+      <td>-0.197</td>
+      <td>0.769</td>
+      <td>0.480</td>
+      <td>0.403</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>2016</td>
+      <td>560.846</td>
+      <td>2.708737</td>
+      <td>9.371</td>
+      <td>-43.131</td>
+      <td>551.475</td>
+      <td>498.973</td>
+      <td>496.074</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>2017</td>
+      <td>575.176</td>
+      <td>2.794660</td>
+      <td>14.330</td>
+      <td>4.959</td>
+      <td>560.846</td>
+      <td>551.475</td>
+      <td>498.973</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>2018</td>
+      <td>614.884</td>
+      <td>3.032750</td>
+      <td>39.708</td>
+      <td>25.378</td>
+      <td>575.176</td>
+      <td>560.846</td>
+      <td>551.475</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>2019</td>
+      <td>660.594</td>
+      <td>3.306829</td>
+      <td>45.710</td>
+      <td>6.002</td>
+      <td>614.884</td>
+      <td>575.176</td>
+      <td>560.846</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>2020</td>
+      <td>660.594</td>
+      <td>2.880547</td>
+      <td>0.000</td>
+      <td>-45.710</td>
+      <td>660.594</td>
+      <td>614.884</td>
+      <td>575.176</td>
+    </tr>
+  </tbody>
+</table>
+<p>129 rows × 8 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_main_lagged</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 129 entries, 3 to 131
+Data columns (total 8 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   year       129 non-null    int64  
+ 1   co2        129 non-null    float64
+ 2   z_score    129 non-null    float64
+ 3   co2_diff   129 non-null    float64
+ 4   co2_diff2  129 non-null    float64
+ 5   lag_1      129 non-null    float64
+ 6   lag_2      129 non-null    float64
+ 7   lag_3      129 non-null    float64
+dtypes: float64(7), int64(1)
+memory usage: 9.1 KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-modelling">
+<h1>Data Modelling<a class="headerlink" href="#data-modelling" title="Link to this heading">#</a></h1>
+<p>Disini saya split datanya menjadi 80% training dan 20% test</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span> <span class="c1"># type: ignore</span>
+
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_main_lagged</span><span class="p">[[</span><span class="sa">f</span><span class="s1">&#39;lag_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]]</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_main_lagged</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span>
+
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape of X_train:&quot;</span><span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape of y_train:&quot;</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape of X_train: (103, 3)
+Shape of y_train: (103,)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Disini saya menggunakan Mape dan RMSE sebagai akurasi model</p>
+<p>MAPE (Mean Absolute Percentage Error)</p>
+<p>Penjelasan
+MAPE adalah metrik untuk mengevaluasi performa model prediksi dengan menghitung rata-rata kesalahan absolut dalam bentuk persentase terhadap nilai aktual.</p>
+<p>Rumusnya:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{MAPE} = \frac{1}{n} \sum\_{i=1}^{n} \left| \frac{y_i - \hat{y}\_i}{y_i} \right| \times 100\%
+\]</div>
+<p>Komponen:</p>
+<ul class="simple">
+<li><p>( y_i ): Nilai aktual.</p></li>
+<li><p>( \hat{y}_i ): Nilai prediksi.</p></li>
+<li><p>( n ): Jumlah data.</p></li>
+</ul>
+<p>Contoh:
+Misalkan kita memiliki data berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(y_i) (Aktual)</p></th>
+<th class="head"><p>(\hat{y}_i) (Prediksi)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>100</p></td>
+<td><p>110</p></td>
+</tr>
+<tr class="row-odd"><td><p>200</p></td>
+<td><p>180</p></td>
+</tr>
+<tr class="row-even"><td><p>300</p></td>
+<td><p>310</p></td>
+</tr>
+</tbody>
+</table>
+<p>Langkah Perhitungan:</p>
+<ol class="arabic">
+<li><p>Hitung kesalahan absolut persentase:</p>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_1 = \left| \frac{100 - 110}{100} \right| \times 100 = 10\%
+   \]</div>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_2 = \left| \frac{200 - 180}{200} \right| \times 100 = 10\%
+   \]</div>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_3 = \left| \frac{300 - 310}{300} \right| \times 100 = 3.33\%
+   \]</div>
+</li>
+<li><p>Hitung rata-rata kesalahan absolut persentase:
+$<span class="math notranslate nohighlight">\(
+\text{MAPE} = \frac{10 + 10 + 3.33}{3} = 7.78\%
+\)</span>$</p></li>
+</ol>
+<p>Hasil:
+MAPE untuk data ini adalah <strong>7.78%</strong>.</p>
+<hr class="docutils" />
+<p>RMSE (Root Mean Squared Error)</p>
+<p>Penjelasan
+RMSE adalah metrik yang mengukur akar rata-rata kesalahan kuadrat antara nilai aktual dan prediksi. RMSE sangat sensitif terhadap kesalahan besar, sehingga cocok digunakan jika kesalahan besar memiliki dampak signifikan.</p>
+<p>Rumusnya:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{RMSE} = \sqrt{\frac{1}{n} \sum\_{i=1}^{n} (y_i - \hat{y}\_i)^2}
+\]</div>
+<p>Komponen:</p>
+<ul class="simple">
+<li><p>( y_i ): Nilai aktual.</p></li>
+<li><p>( \hat{y}_i ): Nilai prediksi.</p></li>
+<li><p>( n ): Jumlah data.</p></li>
+</ul>
+<p>Contoh:
+Menggunakan data yang sama seperti di atas:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(y_i) (Aktual)</p></th>
+<th class="head"><p>(\hat{y}_i) (Prediksi)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>100</p></td>
+<td><p>110</p></td>
+</tr>
+<tr class="row-odd"><td><p>200</p></td>
+<td><p>180</p></td>
+</tr>
+<tr class="row-even"><td><p>300</p></td>
+<td><p>310</p></td>
+</tr>
+</tbody>
+</table>
+<p>Langkah Perhitungan:</p>
+<ol class="arabic">
+<li><p>Hitung kesalahan kuadrat:</p>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_1 = (100 - 110)^2 = 100
+   \]</div>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_2 = (200 - 180)^2 = 400
+   \]</div>
+<div class="math notranslate nohighlight">
+\[
+   \text{Error}\_3 = (300 - 310)^2 = 100
+   \]</div>
+</li>
+<li><p>Hitung rata-rata kesalahan kuadrat:</p>
+<div class="math notranslate nohighlight">
+\[
+   \text{Mean Squared Error (MSE)} = \frac{100 + 400 + 100}{3} = 200
+   \]</div>
+</li>
+<li><p>Hitung akar kuadrat rata-rata:
+$<span class="math notranslate nohighlight">\(
+\text{RMSE} = \sqrt{200} = 14.14
+\)</span>$</p></li>
+</ol>
+<p>Hasil:
+RMSE untuk data ini adalah <strong>14.14</strong>.</p>
+<hr class="docutils" />
+<p>Perbandingan MAPE dan RMSE</p>
+<ul class="simple">
+<li><p><strong>MAPE</strong> memberikan kesalahan dalam bentuk persentase, sehingga lebih mudah dipahami dalam konteks bisnis.</p></li>
+<li><p><strong>RMSE</strong> lebih sensitif terhadap kesalahan besar, sehingga baik untuk mendeteksi model dengan prediksi buruk pada data tertentu.</p></li>
+</ul>
+<p>Keduanya dapat digunakan bersamaan untuk mengevaluasi performa model prediksi.</p>
+<section id="linear-regression">
+<h2>Linear Regression<a class="headerlink" href="#linear-regression" title="Link to this heading">#</a></h2>
+<p>Linear Regression</p>
+<p>Penjelasan
+Linear regression adalah metode statistik yang digunakan untuk memodelkan hubungan antara satu atau lebih variabel independen ((x)) dan variabel dependen ((y)) dengan menggunakan persamaan garis lurus.</p>
+<p>Model regresi linier sederhana dapat dinyatakan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+y = mx + b
+\]</div>
+<p>atau dalam bentuk yang lebih umum:</p>
+<div class="math notranslate nohighlight">
+\[
+y = \beta_0 + \beta_1 x + \epsilon
+\]</div>
+<p>Komponen:</p>
+<ul class="simple">
+<li><p>( y ): Variabel dependen (target atau output).</p></li>
+<li><p>( x ): Variabel independen (prediktor atau input).</p></li>
+<li><p>( \beta_0 ): Intersep (nilai ( y ) saat ( x = 0 )).</p></li>
+<li><p>( \beta_1 ): Koefisien kemiringan (slope) yang menunjukkan seberapa besar ( y ) berubah untuk setiap unit perubahan ( x ).</p></li>
+<li><p>( \epsilon ): Galat (error) atau noise, yaitu deviasi nilai aktual dari nilai prediksi.</p></li>
+</ul>
+<p>Rumus Koefisien
+Untuk regresi linier sederhana, koefisien kemiringan (( \beta_1 )) dan intersep (( \beta_0 )) dapat dihitung dengan rumus berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]</div>
+<p>Contoh:
+Misalkan kita memiliki data berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(x)</p></th>
+<th class="head"><p>(y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+<p>Langkah 1: Hitung Mean</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{x} = \frac{1 + 2 + 3}{3} = 2, \quad \bar{y} = \frac{2 + 3 + 5}{3} = 3.33
+\]</div>
+<p>Langkah 2: Hitung (\beta_1)</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_1 = \frac{(1 - 2)(2 - 3.33) + (2 - 2)(3 - 3.33) + (3 - 2)(5 - 3.33)}{(1 - 2)^2 + (2 - 2)^2 + (3 - 2)^2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_1 = \frac{(-1)(-1.33) + (0)(-0.33) + (1)(1.67)}{1 + 0 + 1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_1 = \frac{1.33 + 0 + 1.67}{2} = 1.5
+\]</div>
+<p>Langkah 3: Hitung (\beta_0)</p>
+<div class="math notranslate nohighlight">
+\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_0 = 3.33 - (1.5)(2) = 0.33
+\]</div>
+<p>Hasil:
+Persamaan regresi linier:</p>
+<div class="math notranslate nohighlight">
+\[
+y = 1.5x + 0.33
+\]</div>
+<p>Interpretasi:</p>
+<ul class="simple">
+<li><p>Untuk setiap peningkatan (x) sebesar 1 unit, (y) meningkat sebesar 1.5 unit.</p></li>
+<li><p>Saat (x = 0), (y) diprediksi bernilai 0.33.</p></li>
+</ul>
+<p>Dalam Code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> <span class="c1"># type: ignore</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span> <span class="c1"># type: ignore</span>
+
+<span class="c1"># Inisialisasi dan fit model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi performa</span>
+<span class="n">rmse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">mape</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMSE: </span><span class="si">{</span><span class="n">rmse</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MAPE: </span><span class="si">{</span><span class="n">mape</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Sliding Window Prediction vs Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Index&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Differenced CO2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMSE: 12.429222773035779
+MAPE: 16.03%
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\sklearn\metrics\_regression.py:492: FutureWarning: &#39;squared&#39; is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function&#39;root_mean_squared_error&#39;.
+  warnings.warn(
+</pre></div>
+</div>
+<img alt="_images/6161f1db05a1fc46a9635f409d4eceda56fd72630c0cafe4376f56814c61504e.png" src="_images/6161f1db05a1fc46a9635f409d4eceda56fd72630c0cafe4376f56814c61504e.png" />
+</div>
+</div>
+</section>
+<section id="ridge-regression">
+<h2>Ridge regression<a class="headerlink" href="#ridge-regression" title="Link to this heading">#</a></h2>
+<p>Ridge Regression</p>
+<p>Penjelasan
+Ridge regression adalah teknik regresi linier yang digunakan untuk menangani multikolinieritas (hubungan linear tinggi antar variabel independen) dengan menambahkan penalti terhadap besar koefisien regresi. Tujuannya adalah untuk mengurangi overfitting dengan mengurangi kompleksitas model.</p>
+<p>Ridge regression meminimalkan fungsi biaya berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+J(\beta) = \sum_{i=1}^n (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p \beta_j^2
+\]</div>
+<p>Komponen:</p>
+<ul class="simple">
+<li><p>( y_i ): Nilai aktual.</p></li>
+<li><p>( \hat{y}<em>i = \beta_0 + \sum</em>{j=1}^p \beta<em>j x</em>{ij} ): Prediksi berdasarkan koefisien (\beta).</p></li>
+<li><p>( \lambda ): Parameter regulasi (juga disebut <em>regularization parameter</em>), menentukan seberapa besar penalti diterapkan.</p>
+<ul>
+<li><p>( \lambda = 0 ): Ridge regression sama seperti regresi linier biasa.</p></li>
+<li><p>( \lambda &gt; 0 ): Menambahkan penalti, memperkecil koefisien untuk mencegah overfitting.</p></li>
+</ul>
+</li>
+<li><p>( \beta_j ): Koefisien regresi untuk fitur (x_j).</p></li>
+<li><p>( p ): Jumlah fitur dalam model.</p></li>
+</ul>
+<p>Rumus Koefisien dalam Ridge Regression
+Ridge regression menghitung koefisien ((\beta)) menggunakan rumus berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\beta} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}
+\]</div>
+<p>Komponen:</p>
+<ul class="simple">
+<li><p>( \mathbf{X} ): Matriks fitur ((n \times p)).</p></li>
+<li><p>( \mathbf{y} ): Vektor target ((n \times 1)).</p></li>
+<li><p>( \mathbf{I} ): Matriks identitas ((p \times p)).</p></li>
+<li><p>( \lambda ): Parameter regulasi.</p></li>
+</ul>
+<hr class="docutils" />
+<p>Contoh:
+Misalkan kita memiliki data berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>(x_1)</p></th>
+<th class="head"><p>(x_2)</p></th>
+<th class="head"><p>(y)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+<p>Langkah-Langkah:</p>
+<ol class="arabic">
+<li><p>Bentuk matriks fitur ((\mathbf{X})) dan target ((\mathbf{y})):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \mathbf{X} =
+   \begin{bmatrix}
+   1 &amp; 2 \\
+   2 &amp; 3 \\
+   3 &amp; 4
+   \end{bmatrix}, \quad
+   \mathbf{y} =
+   \begin{bmatrix}
+   5 \\
+   7 \\
+   9
+   \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p>Tentukan nilai regulasi ((\lambda = 1)).</p></li>
+<li><p>Hitung koefisien dengan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+   \boldsymbol{\beta} = (\mathbf{X}^T \mathbf{X} + \lambda \mathbf{I})^{-1} \mathbf{X}^T \mathbf{y}
+   \]</div>
+<p>Setelah substitusi dan perhitungan matriks, koefisien (\beta_1) dan (\beta_2) akan lebih kecil dibandingkan regresi linier biasa.</p>
+</li>
+</ol>
+<hr class="docutils" />
+<p>Interpretasi:</p>
+<ul class="simple">
+<li><p>Ridge regression mengurangi nilai koefisien ((\beta)), tetapi tidak mengatur koefisien menjadi nol (berbeda dengan Lasso Regression).</p></li>
+<li><p>Cocok untuk model dengan fitur yang memiliki hubungan tinggi atau multikolinieritas.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span> <span class="c1"># type: ignore</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span> <span class="c1"># type: ignore</span>
+
+
+<span class="c1"># Ridge Regression</span>
+<span class="n">ridge_model</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">ridge_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">y_pred_ridge</span> <span class="o">=</span> <span class="n">ridge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi performa</span>
+<span class="n">rmse_ridge</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_ridge</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">mape_ridge</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_ridge</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ridge Regression - RMSE: </span><span class="si">{</span><span class="n">rmse_ridge</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ridge Regression - MAPE: </span><span class="si">{</span><span class="n">mape_ridge</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_ridge</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted (Ridge)&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Ridge Regression - Prediction vs Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Index&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Differenced CO2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\sklearn\metrics\_regression.py:492: FutureWarning: &#39;squared&#39; is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function&#39;root_mean_squared_error&#39;.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ridge Regression - RMSE: 12.42953465698351
+Ridge Regression - MAPE: 16.03%
+</pre></div>
+</div>
+<img alt="_images/c77880a2e9305d4a7f32d0a6bd72168d4b177bf1e237a5946e7a824dccbbe5df.png" src="_images/c77880a2e9305d4a7f32d0a6bd72168d4b177bf1e237a5946e7a824dccbbe5df.png" />
+</div>
+</div>
+</section>
+<section id="random-forest-regressor">
+<h2>Random Forest Regressor<a class="headerlink" href="#random-forest-regressor" title="Link to this heading">#</a></h2>
+<p>Random Forest</p>
+<p>Penjelasan
+<strong>Random Forest</strong> adalah algoritma pembelajaran ensemble yang menggabungkan banyak <em>decision trees</em> untuk membuat prediksi yang lebih akurat dan stabil. Ini digunakan untuk tugas regresi maupun klasifikasi.</p>
+<p>Konsep Utama:</p>
+<ol class="arabic simple">
+<li><p><strong>Ensemble Learning</strong>: Menggabungkan prediksi dari banyak model (dalam hal ini, decision trees) untuk meningkatkan akurasi.</p></li>
+<li><p><strong>Bagging (Bootstrap Aggregating)</strong>: Menggunakan subset acak dari data untuk melatih setiap decision tree.</p></li>
+<li><p><strong>Random Feature Selection</strong>: Setiap tree hanya mempertimbangkan subset fitur yang dipilih secara acak saat membuat split, sehingga menghasilkan variasi antar pohon.</p></li>
+</ol>
+<p>Proses Random Forest:</p>
+<ol class="arabic simple">
+<li><p>Membuat <em>bootstrap samples</em> dari data pelatihan (dengan penggantian).</p></li>
+<li><p>Melatih setiap decision tree pada satu <em>bootstrap sample</em>.</p></li>
+<li><p>Untuk prediksi:</p>
+<ul class="simple">
+<li><p><strong>Klasifikasi</strong>: Menggunakan <em>majority vote</em> (prediksi yang paling sering muncul di antara semua pohon).</p></li>
+<li><p><strong>Regresi</strong>: Mengambil rata-rata prediksi dari semua pohon.</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<p>Rumus Utama
+Untuk Klasifikasi:
+Prediksi akhir diberikan oleh <em>majority vote</em>:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y} = \text{mode} \{ T_1(x), T_2(x), \dots, T_k(x) \}
+\]</div>
+<ul class="simple">
+<li><p>( T_k(x) ): Prediksi dari pohon ke-(k).</p></li>
+<li><p>(\text{mode}): Nilai yang paling sering muncul di antara prediksi semua pohon.</p></li>
+</ul>
+<p>Untuk Regresi:
+Prediksi akhir diberikan oleh rata-rata prediksi semua pohon:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y} = \frac{1}{k} \sum_{i=1}^{k} T_i(x)
+\]</div>
+<ul class="simple">
+<li><p>( T_k(x) ): Prediksi dari pohon ke-(k).</p></li>
+<li><p>( k ): Jumlah pohon dalam hutan.</p></li>
+</ul>
+<hr class="docutils" />
+<p>Contoh:
+Misalkan kita memiliki dataset dengan fitur seperti <strong>Jumlah Studi</strong> dan <strong>Nilai Ujian</strong> untuk memprediksi apakah seorang siswa lulus atau tidak.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Jam Studi</p></th>
+<th class="head"><p>Nilai Ujian</p></th>
+<th class="head"><p>Lulus (Ya/Tidak)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>80</p></td>
+<td><p>Ya</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>50</p></td>
+<td><p>Tidak</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>60</p></td>
+<td><p>Ya</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>30</p></td>
+<td><p>Tidak</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>70</p></td>
+<td><p>Ya</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic">
+<li><p><strong>Bootstrap Sampling</strong>:
+Buat subset acak dengan penggantian, misalnya:</p>
+<ul class="simple">
+<li><p>Tree 1: Data ke-1, ke-2, ke-3.</p></li>
+<li><p>Tree 2: Data ke-2, ke-4, ke-5.</p></li>
+</ul>
+</li>
+<li><p><strong>Latih Decision Trees</strong>:
+Setiap pohon dilatih menggunakan subset yang berbeda dengan pemilihan fitur acak.</p></li>
+<li><p><strong>Prediksi</strong>:</p>
+<ul class="simple">
+<li><p>Pohon 1: Prediksi “Ya”.</p></li>
+<li><p>Pohon 2: Prediksi “Tidak”.</p></li>
+<li><p>Pohon 3: Prediksi “Ya”.</p></li>
+</ul>
+<p>Dengan <em>majority vote</em>, prediksi akhir adalah <strong>“Ya”</strong>.</p>
+</li>
+</ol>
+<p>Random Forest Regressor</p>
+<p>Penjelasan
+<strong>Random Forest Regressor</strong> adalah varian dari algoritma Random Forest yang digunakan untuk memprediksi nilai kontinu dalam tugas regresi. Sama seperti Random Forest untuk klasifikasi, algoritma ini bekerja dengan menggabungkan banyak <em>decision trees</em> menggunakan teknik <em>bagging</em> (bootstrap aggregating). Setiap pohon memberikan prediksi, dan prediksi akhir diperoleh dengan mengambil rata-rata prediksi dari semua pohon.</p>
+<hr class="docutils" />
+<p>Rumus
+Dalam regresi, prediksi akhir ((\hat{y})) diberikan oleh rata-rata dari semua prediksi pohon ((T_k(x))):</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y} = \frac{1}{k} \sum_{i=1}^{k} T_i(x)
+\]</div>
+<ul class="simple">
+<li><p>( T_k(x) ): Prediksi dari pohon ke-(k) untuk input (x).</p></li>
+<li><p>( k ): Jumlah pohon dalam hutan.</p></li>
+</ul>
+<p>Proses:</p>
+<ol class="arabic simple">
+<li><p><strong>Bootstrap Sampling</strong>: Membuat subset acak dari data pelatihan dengan penggantian untuk melatih setiap decision tree.</p></li>
+<li><p><strong>Random Feature Selection</strong>: Setiap pohon hanya menggunakan subset fitur acak untuk membuat split.</p></li>
+<li><p><strong>Prediksi</strong>:</p>
+<ul class="simple">
+<li><p>Setiap pohon memberikan prediksi untuk input data.</p></li>
+<li><p>Rata-rata semua prediksi pohon diambil untuk menentukan hasil akhir.</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+<p>Contoh:
+Misalkan kita memiliki data berikut:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fitur 1 (Area)</p></th>
+<th class="head"><p>Fitur 2 (Kamar)</p></th>
+<th class="head"><p>Harga Rumah</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>120</p></td>
+<td><p>3</p></td>
+<td><p>500</p></td>
+</tr>
+<tr class="row-odd"><td><p>150</p></td>
+<td><p>4</p></td>
+<td><p>600</p></td>
+</tr>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>5</p></td>
+<td><p>750</p></td>
+</tr>
+<tr class="row-odd"><td><p>100</p></td>
+<td><p>2</p></td>
+<td><p>400</p></td>
+</tr>
+<tr class="row-even"><td><p>180</p></td>
+<td><p>4</p></td>
+<td><p>700</p></td>
+</tr>
+</tbody>
+</table>
+<p>Kita ingin memprediksi harga rumah untuk sebuah rumah dengan <strong>Area = 130</strong> dan <strong>Kamar = 3</strong>.</p>
+<p>Langkah:</p>
+<ol class="arabic">
+<li><p><strong>Bootstrap Sampling</strong>:</p>
+<ul class="simple">
+<li><p>Pohon 1 dilatih dengan data ke-1, ke-2, dan ke-3.</p></li>
+<li><p>Pohon 2 dilatih dengan data ke-2, ke-4, dan ke-5.</p></li>
+</ul>
+</li>
+<li><p><strong>Latih Decision Trees</strong>: Setiap pohon menghasilkan model regresi sederhana.</p></li>
+<li><p><strong>Prediksi</strong>:</p>
+<ul class="simple">
+<li><p>Pohon 1 memprediksi: 520</p></li>
+<li><p>Pohon 2 memprediksi: 530</p></li>
+<li><p>Pohon 3 memprediksi: 500</p></li>
+</ul>
+<p>Prediksi akhir:</p>
+<div class="math notranslate nohighlight">
+\[
+   \hat{y} = \frac{520 + 530 + 500}{3} = 516.67
+   \]</div>
+</li>
+</ol>
+<p>dalam code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span> <span class="c1"># type: ignore</span>
+
+<span class="c1"># Random Forest</span>
+<span class="n">rf_model</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rf_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">y_pred_rf</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi performa</span>
+<span class="n">rmse_rf</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_rf</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">mape_rf</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_rf</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random Forest - RMSE: </span><span class="si">{</span><span class="n">rmse_rf</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random Forest - MAPE: </span><span class="si">{</span><span class="n">mape_rf</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_rf</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted (RF)&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Random Forest - Prediction vs Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Index&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Differenced CO2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Random Forest - RMSE: 15.70846255600932
+Random Forest - MAPE: 11.11%
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\sklearn\metrics\_regression.py:492: FutureWarning: &#39;squared&#39; is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function&#39;root_mean_squared_error&#39;.
+  warnings.warn(
+</pre></div>
+</div>
+<img alt="_images/3b56287298768d4f1bbcf849977e8e4570822ddc8fe6bd9fd2b4d251d114668c.png" src="_images/3b56287298768d4f1bbcf849977e8e4570822ddc8fe6bd9fd2b4d251d114668c.png" />
+</div>
+</div>
+</section>
+<section id="svr">
+<h2>SVR<a class="headerlink" href="#svr" title="Link to this heading">#</a></h2>
+<p>Support Vector Regression (SVR)</p>
+<p>Penjelasan
+<strong>Support Vector Regression (SVR)</strong> adalah varian dari Support Vector Machine (SVM) yang digunakan untuk tugas regresi. SVR bertujuan untuk menemukan fungsi yang memprediksi nilai kontinu sambil menjaga deviasi dari nilai yang sebenarnya dalam batas tertentu ((\epsilon)).</p>
+<p>Konsep Utama:</p>
+<ol class="arabic simple">
+<li><p><strong>Margin-Tube ((\epsilon))</strong>: Nilai toleransi di mana prediksi dianggap “cukup dekat” dengan nilai aktual. SVR mencoba meminimalkan deviasi di luar margin ini.</p></li>
+<li><p><strong>Support Vectors</strong>: Hanya data yang berada di luar (\epsilon)-margin yang memengaruhi model. Data di dalam margin diabaikan.</p></li>
+<li><p><strong>Regularization</strong>: Parameter (C) mengontrol trade-off antara margin yang lebar dan kesalahan prediksi.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Rumus Utama
+SVR menggunakan kernel untuk memetakan data ke ruang berdimensi tinggi dan meminimalkan fungsi berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\min \frac{1}{2} \| w \|^2 + C \sum_{i=1}^n \left( \xi_i + \xi_i^* \right)
+\]</div>
+<p>Dengan batasan:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+&amp;y_i - (w^T \phi(x_i) + b) \leq \epsilon + \xi_i, \\
+&amp;(w^T \phi(x_i) + b) - y_i \leq \epsilon + \xi_i^*, \\
+&amp;\xi_i, \xi_i^* \geq 0,
+\end{aligned}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>( w ): Vektor bobot.</p></li>
+<li><p>( \phi(x) ): Fungsi kernel yang memetakan data ke ruang berdimensi tinggi.</p></li>
+<li><p>( b ): Bias.</p></li>
+<li><p>(\xi_i, \xi_i^*): Variabel slack untuk menangani data di luar margin.</p></li>
+<li><p>(C): Parameter regularisasi untuk mengontrol kesalahan.</p></li>
+</ul>
+<p>Prediksi:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y} = w^T \phi(x) + b
+\]</div>
+<hr class="docutils" />
+<p>Contoh
+Misalkan kita memiliki dataset berikut untuk memprediksi harga rumah berdasarkan ukuran:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukuran Rumah (m²)</p></th>
+<th class="head"><p>Harga Rumah (Juta)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>300</p></td>
+</tr>
+<tr class="row-odd"><td><p>70</p></td>
+<td><p>400</p></td>
+</tr>
+<tr class="row-even"><td><p>100</p></td>
+<td><p>600</p></td>
+</tr>
+<tr class="row-odd"><td><p>150</p></td>
+<td><p>900</p></td>
+</tr>
+</tbody>
+</table>
+<p>Kita ingin memprediksi harga untuk rumah dengan ukuran 120 m².</p>
+<p>Langkah:</p>
+<ol class="arabic simple">
+<li><p>Pilih kernel (contoh: linear, polynomial, RBF).</p></li>
+<li><p>Tentukan nilai parameter (C) (regularisasi) dan (\epsilon) (margin toleransi).</p></li>
+<li><p>Model SVR memetakan data ke ruang berdimensi tinggi, membangun margin, dan memprediksi nilai.</p></li>
+</ol>
+<hr class="docutils" />
+<p>dalam code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span> <span class="c1"># type: ignore</span>
+
+<span class="c1"># Support Vector Regressor</span>
+<span class="n">svr_model</span> <span class="o">=</span> <span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">)</span>
+<span class="n">svr_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">y_pred_svr</span> <span class="o">=</span> <span class="n">svr_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi performa</span>
+<span class="n">rmse_svr</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svr</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">mape_svr</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_svr</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SVR - RMSE: </span><span class="si">{</span><span class="n">rmse_svr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SVR - MAPE: </span><span class="si">{</span><span class="n">mape_svr</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_svr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted (SVR)&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;SVR - Prediction vs Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Index&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Differenced CO2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\sklearn\metrics\_regression.py:492: FutureWarning: &#39;squared&#39; is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function&#39;root_mean_squared_error&#39;.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SVR - RMSE: 155.28796788636907
+SVR - MAPE: 245.66%
+</pre></div>
+</div>
+<img alt="_images/03ec662e50de7286cd893571e0cb4dcbd037ec4aef13d791130b86bf3cbbb856.png" src="_images/03ec662e50de7286cd893571e0cb4dcbd037ec4aef13d791130b86bf3cbbb856.png" />
+</div>
+</div>
+</section>
+<section id="multi-layer-perceptron">
+<h2>Multi layer perceptron<a class="headerlink" href="#multi-layer-perceptron" title="Link to this heading">#</a></h2>
+</section>
+<section id="multi-layer-perceptron-mlp">
+<h2>Multi-Layer Perceptron (MLP)<a class="headerlink" href="#multi-layer-perceptron-mlp" title="Link to this heading">#</a></h2>
+<p>Penjelasan
+<strong>Multi-Layer Perceptron (MLP)</strong> adalah jenis jaringan saraf tiruan (artificial neural network) yang terdiri dari satu atau lebih lapisan tersembunyi antara lapisan input dan output. MLP termasuk dalam kategori jaringan saraf feedforward, di mana informasi hanya mengalir dalam satu arah: dari input ke output. MLP digunakan untuk tugas regresi dan klasifikasi.</p>
+<p>MLP terdiri dari:</p>
+<ol class="arabic simple">
+<li><p><strong>Lapisan Input</strong>: Lapisan pertama yang menerima data masukan.</p></li>
+<li><p><strong>Lapisan Tersembunyi (Hidden Layer)</strong>: Satu atau lebih lapisan di mana transformasi non-linear diterapkan pada data. Setiap neuron di lapisan tersembunyi menghubungkan inputnya dengan bobot tertentu dan menghasilkan output setelah aktivasi.</p></li>
+<li><p><strong>Lapisan Output</strong>: Lapisan terakhir yang menghasilkan prediksi atau kelas.</p></li>
+<li><p><strong>Fungsi Aktivasi</strong>: Fungsi non-linear seperti ReLU (Rectified Linear Unit) atau sigmoid yang diterapkan pada output neuron untuk memperkenalkan non-linearitas.</p></li>
+</ol>
+<p>Proses pelatihan MLP menggunakan algoritma <strong>backpropagation</strong>, di mana kesalahan dihitung pada lapisan output dan kemudian disebarkan kembali ke lapisan-lapisan sebelumnya untuk memperbarui bobot dengan tujuan meminimalkan fungsi kerugian (loss function).</p>
+<hr class="docutils" />
+<p>Rumus Utama</p>
+<ol class="arabic">
+<li><p><strong>Input ke Neuron</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+   z_j = \sum_{i} w_{ij} x_i + b_j
+   \]</div>
+<ul class="simple">
+<li><p>( w_{ij} ): Bobot yang menghubungkan input (x_i) ke neuron (j).</p></li>
+<li><p>( b_j ): Bias untuk neuron (j).</p></li>
+<li><p>( x_i ): Nilai input.</p></li>
+</ul>
+</li>
+<li><p><strong>Fungsi Aktivasi</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+   a_j = \sigma(z_j)
+   \]</div>
+<ul class="simple">
+<li><p>( \sigma ): Fungsi aktivasi (misalnya, ReLU, sigmoid).</p></li>
+<li><p>( a_j ): Aktivasi neuron.</p></li>
+</ul>
+</li>
+<li><p><strong>Output dari Lapisan Tersembunyi</strong>:
+Untuk setiap lapisan tersembunyi, neuron menghitung output berdasarkan input dan bobot yang dipelajari serta menerapkan fungsi aktivasi.</p></li>
+<li><p><strong>Loss Function</strong>:
+Untuk regresi, loss function sering menggunakan <strong>Mean Squared Error (MSE)</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+   L = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2
+   \]</div>
+<ul class="simple">
+<li><p>( y_i ): Nilai aktual.</p></li>
+<li><p>( \hat{y}_i ): Prediksi oleh model.</p></li>
+</ul>
+</li>
+<li><p><strong>Backpropagation</strong>:
+Algoritma untuk memperbarui bobot-bobot jaringan berdasarkan gradien dari fungsi kerugian terhadap bobot.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Contoh
+Misalkan kita memiliki data berikut untuk memprediksi harga rumah berdasarkan ukuran rumah:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukuran Rumah (m²)</p></th>
+<th class="head"><p>Harga Rumah (Juta)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>300</p></td>
+</tr>
+<tr class="row-odd"><td><p>70</p></td>
+<td><p>400</p></td>
+</tr>
+<tr class="row-even"><td><p>100</p></td>
+<td><p>600</p></td>
+</tr>
+<tr class="row-odd"><td><p>150</p></td>
+<td><p>900</p></td>
+</tr>
+</tbody>
+</table>
+<p>Kita akan menggunakan <strong>Multi-Layer Perceptron</strong> untuk memprediksi harga rumah berdasarkan ukuran rumah.</p>
+<p>#Langkah-langkah:</p>
+<ol class="arabic simple">
+<li><p><strong>Input Layer</strong>: Ukuran rumah akan menjadi input untuk jaringan.</p></li>
+<li><p><strong>Hidden Layer</strong>: Proses transformasi non-linear menggunakan fungsi aktivasi seperti ReLU.</p></li>
+<li><p><strong>Output Layer</strong>: Prediksi harga rumah.</p></li>
+</ol>
+<hr class="docutils" />
+<p>contoh code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPRegressor</span> <span class="c1"># type: ignore</span>
+
+<span class="n">mlp_model</span> <span class="o">=</span> <span class="n">MLPRegressor</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,),</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">mlp_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Prediksi</span>
+<span class="n">y_pred_mlp</span> <span class="o">=</span> <span class="n">mlp_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi performa</span>
+<span class="n">rmse_mlp</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_mlp</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">mape_mlp</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_mlp</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLP Regressor - RMSE: </span><span class="si">{</span><span class="n">rmse_mlp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLP Regressor - MAPE: </span><span class="si">{</span><span class="n">mape_mlp</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot hasil prediksi vs aktual</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y_pred_mlp</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted (MLP)&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;MLP Regressor - Prediction vs Actual&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Index&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Differenced CO2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\sklearn\metrics\_regression.py:492: FutureWarning: &#39;squared&#39; is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function&#39;root_mean_squared_error&#39;.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MLP Regressor - RMSE: 15.084772341934094
+MLP Regressor - MAPE: 14.36%
+</pre></div>
+</div>
+<img alt="_images/2a3030de0a40a9cf790ad6981f3b30d043387b8b24867c3e48957d13caa04107.png" src="_images/2a3030de0a40a9cf790ad6981f3b30d043387b8b24867c3e48957d13caa04107.png" />
+</div>
+</div>
+</section>
+<section id="hasil-model-selain-arima-sarima">
+<h2>Hasil Model selain Arima Sarima<a class="headerlink" href="#hasil-model-selain-arima-sarima" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>RMSE</p></th>
+<th class="head"><p>MAPE</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Linear</p></td>
+<td><p>12.429222773035779</p></td>
+<td><p>16.03%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ridge Regression</p></td>
+<td><p>12.42953465698351</p></td>
+<td><p>16.03%</p></td>
+</tr>
+<tr class="row-even"><td><p>Random Forest</p></td>
+<td><p>15.70846255600932</p></td>
+<td><p>11.11%</p></td>
+</tr>
+<tr class="row-odd"><td><p>SVR</p></td>
+<td><p>155.28796788636907</p></td>
+<td><p>245.66%</p></td>
+</tr>
+<tr class="row-even"><td><p>MLP Regressor</p></td>
+<td><p>15.084772341934094</p></td>
+<td><p>14.36%</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="percobaan-dengan-arima-sarima">
+<h1>Percobaan dengan Arima Sarima<a class="headerlink" href="#percobaan-dengan-arima-sarima" title="Link to this heading">#</a></h1>
+<section id="prediksi-dengan-model-arima">
+<h2>Prediksi dengan model ARIMA<a class="headerlink" href="#prediksi-dengan-model-arima" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pmdarima</span> <span class="kn">import</span> <span class="n">auto_arima</span> <span class="c1"># type: ignore</span>
+<span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span> <span class="c1"># type: ignore</span>
+
+<span class="k">def</span> <span class="nf">find_best_arima_model</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">model_auto</span> <span class="o">=</span> <span class="n">auto_arima</span><span class="p">(</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span>  
+        <span class="n">seasonal</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">stepwise</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">suppress_warnings</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">max_order</span><span class="o">=</span><span class="mi">10</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">model_auto</span>
+
+
+<span class="n">best_arima_model</span> <span class="o">=</span> <span class="n">find_best_arima_model</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">best_arima_model</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+
+<span class="n">p</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">best_arima_model</span><span class="o">.</span><span class="n">order</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Optimal ARIMA parameters: p=</span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">, d=</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">, q=</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Performing stepwise search to minimize aic
+ ARIMA(2,0,2)(0,0,0)[0]             : AIC=1003.243, Time=0.08 sec
+ ARIMA(0,0,0)(0,0,0)[0]             : AIC=1082.379, Time=0.01 sec
+ ARIMA(1,0,0)(0,0,0)[0]             : AIC=1072.486, Time=0.01 sec
+ ARIMA(0,0,1)(0,0,0)[0]             : AIC=1016.054, Time=0.02 sec
+ ARIMA(1,0,2)(0,0,0)[0]             : AIC=1017.099, Time=0.06 sec
+ ARIMA(2,0,1)(0,0,0)[0]             : AIC=1005.104, Time=0.05 sec
+ ARIMA(3,0,2)(0,0,0)[0]             : AIC=1000.971, Time=0.10 sec
+ ARIMA(3,0,1)(0,0,0)[0]             : AIC=1004.701, Time=0.06 sec
+ ARIMA(4,0,2)(0,0,0)[0]             : AIC=1002.969, Time=0.14 sec
+ ARIMA(3,0,3)(0,0,0)[0]             : AIC=1002.966, Time=0.13 sec
+ ARIMA(2,0,3)(0,0,0)[0]             : AIC=1009.866, Time=0.12 sec
+ ARIMA(4,0,1)(0,0,0)[0]             : AIC=1006.185, Time=0.07 sec
+ ARIMA(4,0,3)(0,0,0)[0]             : AIC=inf, Time=0.33 sec
+ ARIMA(3,0,2)(0,0,0)[0] intercept   : AIC=999.035, Time=0.16 sec
+ ARIMA(2,0,2)(0,0,0)[0] intercept   : AIC=1001.202, Time=0.14 sec
+ ARIMA(3,0,1)(0,0,0)[0] intercept   : AIC=1002.744, Time=0.09 sec
+ ARIMA(4,0,2)(0,0,0)[0] intercept   : AIC=1001.034, Time=0.23 sec
+ ARIMA(3,0,3)(0,0,0)[0] intercept   : AIC=1001.033, Time=0.19 sec
+ ARIMA(2,0,1)(0,0,0)[0] intercept   : AIC=1003.214, Time=0.08 sec
+ ARIMA(2,0,3)(0,0,0)[0] intercept   : AIC=1008.222, Time=0.27 sec
+ ARIMA(4,0,1)(0,0,0)[0] intercept   : AIC=1004.294, Time=0.10 sec
+ ARIMA(4,0,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.48 sec
+
+Best model:  ARIMA(3,0,2)(0,0,0)[0] intercept
+Total fit time: 2.933 seconds
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                  130
+Model:               SARIMAX(3, 0, 2)   Log Likelihood                -492.517
+Date:                Thu, 05 Dec 2024   AIC                            999.035
+Time:                        20:10:30   BIC                           1019.107
+Sample:                             0   HQIC                          1007.191
+                                - 130                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P&gt;|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept      0.4335      0.218      1.985      0.047       0.005       0.862
+ar.L1         -0.8098      0.098     -8.267      0.000      -1.002      -0.618
+ar.L2         -0.3034      0.092     -3.294      0.001      -0.484      -0.123
+ar.L3         -0.4265      0.062     -6.856      0.000      -0.548      -0.305
+ma.L1         -0.0365      0.097     -0.375      0.708      -0.228       0.155
+ma.L2         -0.7746      0.110     -7.024      0.000      -0.991      -0.558
+sigma2       111.8855      9.264     12.078      0.000      93.729     130.042
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                95.03
+Prob(Q):                              0.95   Prob(JB):                         0.00
+Heteroskedasticity (H):              97.02   Skew:                             0.00
+Prob(H) (two-sided):                  0.00   Kurtosis:                         7.19
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+Optimal ARIMA parameters: p=3, d=0, q=2
+</pre></div>
+</div>
+</div>
+</div>
+<section id="penjelasan-aic-dalam-model-arima">
+<h3>Penjelasan AIC dalam Model ARIMA<a class="headerlink" href="#penjelasan-aic-dalam-model-arima" title="Link to this heading">#</a></h3>
+<p><strong>AIC (Akaike Information Criterion)</strong> adalah ukuran yang digunakan untuk mengevaluasi kualitas model statistik, termasuk model ARIMA. Dalam konteks ini, AIC digunakan untuk memilih model ARIMA terbaik dari sejumlah kandidat berdasarkan trade-off antara <strong>kecocokan model</strong> dan <strong>kompleksitas model</strong>.</p>
+<section id="definisi-rumus">
+<h4>Definisi Rumus:<a class="headerlink" href="#definisi-rumus" title="Link to this heading">#</a></h4>
+<p>AIC dihitung dengan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{AIC} = 2k - 2 \ln(L)
+\]</div>
+<ul class="simple">
+<li><p>( k ): Jumlah parameter dalam model (termasuk konstanta, koefisien AR, MA, dll.).</p></li>
+<li><p>( L ): Log-likelihood dari model (menunjukkan seberapa baik model cocok dengan data).</p></li>
+</ul>
+</section>
+<section id="interpretasi-nilai-aic">
+<h4>Interpretasi Nilai AIC:<a class="headerlink" href="#interpretasi-nilai-aic" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Semakin kecil nilai AIC, semakin baik model tersebut.</p></li>
+<li><p>AIC menyeimbangkan kecocokan model dengan penalti untuk jumlah parameter yang digunakan (mencegah overfitting).</p></li>
+<li><p>AIC digunakan untuk membandingkan beberapa model: <strong>model dengan AIC terendah adalah yang terbaik.</strong></p></li>
+</ol>
+</section>
+<section id="pemilihan-model-berdasarkan-aic">
+<h4>Pemilihan Model Berdasarkan AIC:<a class="headerlink" href="#pemilihan-model-berdasarkan-aic" title="Link to this heading">#</a></h4>
+<p>Pada output Anda, model-model dengan nilai AIC berbeda diuji, dan model dengan AIC terendah dipilih:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model</p></th>
+<th class="head"><p>AIC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ARIMA(2,0,2)</p></td>
+<td><p>1003.243</p></td>
+</tr>
+<tr class="row-odd"><td><p>ARIMA(0,0,0)</p></td>
+<td><p>1082.379</p></td>
+</tr>
+<tr class="row-even"><td><p>ARIMA(3,0,2)</p></td>
+<td><p>1000.971</p></td>
+</tr>
+<tr class="row-odd"><td><p>ARIMA(3,0,2) + intercept</p></td>
+<td><p><strong>999.035</strong> (terendah)</p></td>
+</tr>
+<tr class="row-even"><td><p>ARIMA(3,0,3)</p></td>
+<td><p>1002.966</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>ARIMA(3,0,2) dengan intercept</strong> memiliki nilai AIC <strong>999.035</strong>, yang merupakan nilai terendah.</p></li>
+<li><p>Oleh karena itu, <strong>model ini dipilih sebagai model terbaik.</strong></p></li>
+</ul>
+</section>
+<section id="kesimpulan">
+<h4>Kesimpulan:<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Model terbaik adalah ARIMA(3,0,2) dengan intercept (AIC = 999.035).</strong></p></li>
+<li><p>Nilai AIC membantu menghindari overfitting dengan penalti untuk model yang terlalu kompleks.</p></li>
+<li><p>Namun, AIC hanya satu metrik. Evaluasi tambahan, seperti pemeriksaan residual, uji stasioneritas, atau validasi terhadap data uji, diperlukan untuk memastikan kualitas prediksi.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">train_arima_model</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">ARIMA</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">)</span>
+    <span class="n">model_fit</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">model_fit</span>
+
+
+<span class="n">arima_model_fit</span> <span class="o">=</span> <span class="n">train_arima_model</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">],</span> <span class="n">order</span><span class="o">=</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">arima_model_fit</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\statsmodels\tsa\statespace\sarimax.py:978: UserWarning: Non-invertible starting MA parameters found. Using zeros as starting parameters.
+  warn(&#39;Non-invertible starting MA parameters found.&#39;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:              co2_diff2   No. Observations:                  132
+Model:                 ARIMA(3, 2, 3)   Log Likelihood                -513.338
+Date:                Thu, 05 Dec 2024   AIC                           1040.676
+Time:                        20:10:31   BIC                           1060.749
+Sample:                             0   HQIC                          1048.832
+                                - 132                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P&gt;|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.0137      0.052      0.264      0.791      -0.088       0.116
+ar.L2         -0.3503      0.055     -6.419      0.000      -0.457      -0.243
+ar.L3         -0.1498      0.051     -2.949      0.003      -0.249      -0.050
+ma.L1         -2.9389      0.298     -9.863      0.000      -3.523      -2.355
+ma.L2          2.8981      0.578      5.018      0.000       1.766       4.030
+ma.L3         -0.9591      0.287     -3.339      0.001      -1.522      -0.396
+sigma2       105.4979     30.838      3.421      0.001      45.056     165.940
+===================================================================================
+Ljung-Box (L1) (Q):                   0.01   Jarque-Bera (JB):                92.15
+Prob(Q):                              0.92   Prob(JB):                         0.00
+Heteroskedasticity (H):             431.40   Skew:                            -0.42
+Prob(H) (two-sided):                  0.00   Kurtosis:                         7.04
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>e:\apps\anaconda3\envs\MLEnv\Lib\site-packages\statsmodels\base\model.py:607: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  warnings.warn(&quot;Maximum Likelihood optimization failed to &quot;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="penjelasan-output-model-sarimax-arima-3-0-2">
+<h1>Penjelasan Output Model SARIMAX (ARIMA(3, 0, 2))<a class="headerlink" href="#penjelasan-output-model-sarimax-arima-3-0-2" title="Link to this heading">#</a></h1>
+<section id="ringkasan-model">
+<h2><strong>1. Ringkasan Model</strong><a class="headerlink" href="#ringkasan-model" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Dep. Variable</strong>: <em>co2_diff2</em><br />
+Variabel dependen yang dimodelkan adalah <code class="docutils literal notranslate"><span class="pre">co2_diff2</span></code> (selisih kedua dari CO2).</p></li>
+<li><p><strong>No. Observations</strong>: <em>132</em><br />
+Ada 132 data observasi yang digunakan dalam fitting model.</p></li>
+<li><p><strong>Model</strong>: <em>ARIMA(3, 0, 2)</em><br />
+Model yang digunakan adalah ARIMA dengan 3 lag autoregressive (AR), 0 differencing (stasioneritas tidak diterapkan pada level variabel), dan 2 lag moving average (MA).</p></li>
+<li><p><strong>Log Likelihood</strong>: <em>-492.517</em><br />
+Log likelihood adalah ukuran kecocokan model. Nilai lebih tinggi (kurang negatif) menunjukkan model yang lebih baik.</p></li>
+<li><p><strong>AIC</strong>: <em>999.035</em><br />
+Akaike Information Criterion (AIC) digunakan untuk memilih model terbaik, dengan nilai lebih rendah menunjukkan model yang lebih baik.</p></li>
+<li><p><strong>BIC</strong>: <em>1019.214</em><br />
+Bayesian Information Criterion (BIC) mirip dengan AIC tetapi memberikan penalti lebih besar untuk model yang kompleks.</p></li>
+<li><p><strong>HQIC</strong>: <em>1007.235</em><br />
+Hannan-Quinn Information Criterion (HQIC) adalah metrik tambahan untuk mengevaluasi model.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="estimasi-parameter">
+<h2><strong>2. Estimasi Parameter</strong><a class="headerlink" href="#estimasi-parameter" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Koefisien ((\beta))</p></th>
+<th class="head"><p>Std. Error</p></th>
+<th class="head"><p>Z-Statistik</p></th>
+<th class="head"><p>P&gt;</p></th>
+<th class="head"><p>z</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>Interval Kepercayaan (95%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>const</strong></p></td>
+<td><p>0.1707</p></td>
+<td><p>0.086</p></td>
+<td><p>1.991</p></td>
+<td><p>0.046</p></td>
+<td><p>(0.003, 0.339)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ar.L1</strong></p></td>
+<td><p>-0.8098</p></td>
+<td><p>0.098</p></td>
+<td><p>-8.267</p></td>
+<td><p>0.000</p></td>
+<td><p>(-1.002, -0.618)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ar.L2</strong></p></td>
+<td><p>-0.3035</p></td>
+<td><p>0.092</p></td>
+<td><p>-3.294</p></td>
+<td><p>0.001</p></td>
+<td><p>(-0.484, -0.123)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ar.L3</strong></p></td>
+<td><p>-0.4265</p></td>
+<td><p>0.062</p></td>
+<td><p>-6.857</p></td>
+<td><p>0.000</p></td>
+<td><p>(-0.548, -0.305)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>ma.L1</strong></p></td>
+<td><p>-0.0365</p></td>
+<td><p>0.097</p></td>
+<td><p>-0.374</p></td>
+<td><p>0.708</p></td>
+<td><p>(-0.228, 0.155)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ma.L2</strong></p></td>
+<td><p>-0.7746</p></td>
+<td><p>0.110</p></td>
+<td><p>-7.025</p></td>
+<td><p>0.000</p></td>
+<td><p>(-0.991, -0.558)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>sigma²</strong></p></td>
+<td><p>111.8802</p></td>
+<td><p>9.263</p></td>
+<td><p>12.079</p></td>
+<td><p>0.000</p></td>
+<td><p>(93.726, 130.035)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<section id="penjelasan-parameter">
+<h3>Penjelasan Parameter:<a class="headerlink" href="#penjelasan-parameter" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>const (Konstanta)</strong>: Nilai konstanta signifikan ((p = 0.046)), sehingga dapat disimpulkan bahwa terdapat rata-rata tetap dalam data.</p></li>
+<li><p><strong>ar.L1, ar.L2, ar.L3</strong>: Komponen autoregressive (AR) menunjukkan dampak dari nilai lag (t-1, t-2, t-3) pada nilai saat ini. Ketiga parameter AR signifikan ((p &lt; 0.05)), sehingga lag-lag ini berkontribusi pada prediksi.</p></li>
+<li><p><strong>ma.L1, ma.L2</strong>: Komponen moving average (MA) mencakup dampak dari residual lagged. MA.L2 signifikan ((p &lt; 0.05)), tetapi MA.L1 tidak signifikan ((p = 0.708)).</p></li>
+<li><p><strong>sigma²</strong>: Varians residual signifikan, menunjukkan besarnya noise atau kesalahan dalam model.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="uji-diagnostik">
+<h2><strong>3. Uji Diagnostik</strong><a class="headerlink" href="#uji-diagnostik" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Ljung-Box (L1) (Q): 0.00, Prob(Q): 0.95</strong><br />
+Nilai probabilitas (p = 0.95) menunjukkan bahwa residual tidak memiliki autokorelasi yang signifikan (uji Ljung-Box tidak menolak hipotesis nol).</p></li>
+<li><p><strong>Jarque-Bera (JB): 101.66, Prob(JB): 0.00</strong><br />
+Nilai (p = 0.00) menunjukkan bahwa residual tidak berdistribusi normal (hipotesis nol ditolak).</p></li>
+<li><p><strong>Heteroskedasticity (H): 104.59, Prob(H): 0.00</strong><br />
+Uji menunjukkan heteroskedastisitas (variasi residual berubah-ubah). Hal ini mengindikasikan adanya variasi yang tidak konstan pada residual.</p></li>
+<li><p><strong>Skew: 0.00, Kurtosis: 7.30</strong><br />
+Residual memiliki kurtosis tinggi (lebih dari 3), menunjukkan distribusi heavy-tailed (leptokurtic).</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="interpretasi">
+<h2><strong>4. Interpretasi</strong><a class="headerlink" href="#interpretasi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Model ARIMA(3, 0, 2) cukup baik dalam memodelkan data, dengan parameter AR signifikan dan satu parameter MA signifikan.</p></li>
+<li><p>Nilai AIC/BIC membantu memilih model terbaik, tetapi heteroskedastisitas dan distribusi residual menunjukkan kemungkinan perbaikan dengan model lain (misalnya, ARIMA dengan varians bersyarat seperti <strong>GARCH</strong>).</p></li>
+<li><p>Jika hasil prediksi kurang baik, bisa dicoba transformasi data lebih lanjut (seperti log transformasi) atau model alternatif.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">residuals</span> <span class="o">=</span> <span class="n">arima_model_fit</span><span class="o">.</span><span class="n">resid</span>
+
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Residuals&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Residuals of ARIMA Model&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">adfuller</span> <span class="c1"># type: ignore</span>
+<span class="n">result_residuals</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">residuals</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADF Statistic (Residuals):&quot;</span><span class="p">,</span> <span class="n">result_residuals</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-value (Residuals):&quot;</span><span class="p">,</span> <span class="n">result_residuals</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">result_residuals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuals masih tidak stasioner.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuals sudah stasioner.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b62a7067ef13ac7d7d72ef6f6792887ae704aa265d6062e9ae4f4421e142d839.png" src="_images/b62a7067ef13ac7d7d72ef6f6792887ae704aa265d6062e9ae4f4421e142d839.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic (Residuals): -6.6718592132509835
+p-value (Residuals): 4.5665756543474785e-09
+Residuals sudah stasioner.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">last_value_original</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Nilai terakhir dari data asli</span>
+
+<span class="n">last_value_diff1</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Nilai terakhir dari co2_diff (differencing pertama)</span>
+<span class="n">last_value_diff2</span> <span class="o">=</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2_diff2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Nilai terakhir dari co2_diff2 (differencing kedua)</span>
+
+<span class="n">forecast_steps</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">forecast</span> <span class="o">=</span> <span class="n">arima_model_fit</span><span class="o">.</span><span class="n">forecast</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="n">forecast_steps</span><span class="p">)</span>
+
+<span class="n">forecast_undiff1</span> <span class="o">=</span> <span class="n">forecast</span> <span class="o">+</span> <span class="n">last_value_diff2</span>
+
+<span class="n">forecast_undiff2</span> <span class="o">=</span> <span class="n">forecast_undiff1</span> <span class="o">+</span> <span class="n">last_value_diff1</span>
+
+<span class="n">forecast_undiff3</span> <span class="o">=</span> <span class="n">forecast_undiff2</span> <span class="o">+</span> <span class="n">last_value_original</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forecasted values after undifferencing:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">forecast_undiff3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Forecasted values after undifferencing:
+132    628.973833
+133    631.297198
+134    618.135503
+135    608.194244
+136    612.329873
+137    617.849925
+138    617.975501
+139    615.433727
+140    614.537668
+141    615.406521
+Name: predicted_mean, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">forecast_years</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">forecast_steps</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span> <span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual Data&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">forecast_years</span><span class="p">,</span> <span class="n">forecast_undiff3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Forecast&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;CO2 Forecast with ARIMA&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;CO2 Levels&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/19bf781cbbbc07f0c9a9c4b1330017fc9c875b3900fb28e827d73095869cabc9.png" src="_images/19bf781cbbbc07f0c9a9c4b1330017fc9c875b3900fb28e827d73095869cabc9.png" />
+</div>
+</div>
+</section>
+<section id="model-sarima">
+<h2>Model SARIMA<a class="headerlink" href="#model-sarima" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.tsa.statespace.sarimax</span> <span class="kn">import</span> <span class="n">SARIMAX</span> <span class="c1"># type: ignore</span>
+
+<span class="c1"># Model SARIMA</span>
+<span class="n">sarima_model</span> <span class="o">=</span> <span class="n">SARIMAX</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span> <span class="n">order</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">seasonal_order</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span> 
+<span class="n">sarima_fit</span> <span class="o">=</span> <span class="n">sarima_model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c1"># Residuals SARIMA</span>
+<span class="n">residuals_sarima</span> <span class="o">=</span> <span class="n">sarima_fit</span><span class="o">.</span><span class="n">resid</span>
+
+<span class="c1"># Uji stasioneritas residual SARIMA</span>
+<span class="n">result_residuals_sarima</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">residuals_sarima</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADF Statistic (SARIMA Residuals):&quot;</span><span class="p">,</span> <span class="n">result_residuals_sarima</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p-value (SARIMA Residuals):&quot;</span><span class="p">,</span> <span class="n">result_residuals_sarima</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="n">result_residuals_sarima</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuals SARIMA masih tidak stasioner.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuals SARIMA sudah stasioner.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ADF Statistic (SARIMA Residuals): -6.790644726778288
+p-value (SARIMA Residuals): 2.3695386383678124e-09
+Residuals SARIMA sudah stasioner.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histogram residuals</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">sarima_fit</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram of Residuals&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Residuals&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Density plot</span>
+<span class="n">sarima_fit</span><span class="o">.</span><span class="n">resid</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Density Plot of Residuals&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1c241373272ace1efd3f126662125be3f9b0ab43464e45bd77fbba396c4c3a00.png" src="_images/1c241373272ace1efd3f126662125be3f9b0ab43464e45bd77fbba396c4c3a00.png" />
+<img alt="_images/94ee5e2c59ba3029d5c90a2611795e120a977d553a94d00599eda858c3115e2b.png" src="_images/94ee5e2c59ba3029d5c90a2611795e120a977d553a94d00599eda858c3115e2b.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prediksi 10 langkah ke depan</span>
+<span class="n">forecast_steps</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">forecast</span> <span class="o">=</span> <span class="n">sarima_fit</span><span class="o">.</span><span class="n">forecast</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="n">forecast_steps</span><span class="p">)</span>
+
+<span class="c1"># Cetak hasil prediksi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forecasted values:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">forecast</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Forecasted values:
+132    681.668326
+133    706.864033
+134    734.313123
+135    760.538514
+136    773.146602
+137    791.817868
+138    832.723167
+139    852.281158
+140    872.836576
+141    896.488896
+Name: predicted_mean, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualisasi prediksi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Actual Data&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_main</span><span class="p">[</span><span class="s1">&#39;co2&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="n">forecast_steps</span><span class="p">),</span> <span class="n">forecast</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Forecast&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;SARIMA Forecast&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;CO2 Levels&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d32cdb6ddea02266488e18ac13c47f16707f0d7e166b63567139923d2738efbd.png" src="_images/d32cdb6ddea02266488e18ac13c47f16707f0d7e166b63567139923d2738efbd.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deployement">
+<h1>Deployement<a class="headerlink" href="#deployement" title="Link to this heading">#</a></h1>
+<section id="menyimpan-model">
+<h2>Menyimpan model<a class="headerlink" href="#menyimpan-model" title="Link to this heading">#</a></h2>
+<p>model terbaik yang diambil adalah random forest regressor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">joblib</span>
+
+<span class="c1"># Menyimpan model yang sudah dilatih</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">rf_model</span><span class="p">,</span> <span class="s1">&#39;random_forest_model.joblib&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;random_forest_model.joblib&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="website">
+<h2>Website<a class="headerlink" href="#website" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://huggingface.co/spaces/ahmadnoval/PSD-Co2-Emmision">https://huggingface.co/spaces/ahmadnoval/PSD-Co2-Emmision</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Project1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PROYEK SAINS DATA PREDIKSI PRODUKSI PADI KOTA SURABAYA MENGGUNAKAN DATA CUACA UNTUK MENSTABILKAN KETAHANAN PANGAN</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Project3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PROYEK SAINS DATA PREDIKSI DETAK JANTUNG UNTUK DETEKSI DINI KEGAGALAN JANTUNG PASIEN KOGNESTIF BERAT</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">PROYEK SAINS DATA PREDIKSI EMISI CO2 PER TAHUN NEGARA INDONESIA BERDASARKAN POLA WAKTU</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#bisnis-understanding">Bisnis Understanding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis">2. Tujuan Analisis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-data">Read Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-overview">Data overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kualitas-data">Kualitas Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-value">Missing Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">Outlier</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-stasioner">Uji stasioner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-uji-stasioner-manual">Contoh uji stasioner manual</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-stasioneritas-menggunakan-uji-adf-dan-perhitungan-manual">Uji Stasioneritas Menggunakan Uji ADF dan Perhitungan Manual</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">1. Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-perubahan-nilai-differencing">2. Menghitung Perubahan Nilai (Differencing)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-model-autoregressive-ar">3. Menyusun Model Autoregressive (AR)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-variabel-waktu-t">3.1. Menambahkan Variabel Waktu (t)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menambahkan-variabel-lag">3.2. Menambahkan Variabel Lag</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-persamaan-regresi-linier">4. Menyusun Persamaan Regresi Linier</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-desain">4.1. Menyusun Matriks Desain</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-koefisien-regresi">4.2. Menghitung Koefisien Regresi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-regresi">4.3. Hasil Regresi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menginterpretasikan-hasil-uji-stasioneritas">5. Menginterpretasikan Hasil Uji Stasioneritas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing">Data prepocessing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolasi-outlier">interpolasi outlier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stasionerisasi-data-untuk-model-arima-sarima">Stasionerisasi data untuk model arima sarima</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sliding-windows-time-series-untuk-selain-arima">Sliding Windows Time Series untuk selain arima</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modelling">Data Modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ridge-regression">Ridge regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest-regressor">Random Forest Regressor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#svr">SVR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron">Multi layer perceptron</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-layer-perceptron-mlp">Multi-Layer Perceptron (MLP)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-model-selain-arima-sarima">Hasil Model selain Arima Sarima</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#percobaan-dengan-arima-sarima">Percobaan dengan Arima Sarima</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediksi-dengan-model-arima">Prediksi dengan model ARIMA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-aic-dalam-model-arima">Penjelasan AIC dalam Model ARIMA</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-rumus">Definisi Rumus:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi-nilai-aic">Interpretasi Nilai AIC:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model-berdasarkan-aic">Pemilihan Model Berdasarkan AIC:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-output-model-sarimax-arima-3-0-2">Penjelasan Output Model SARIMAX (ARIMA(3, 0, 2))</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-model"><strong>1. Ringkasan Model</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimasi-parameter"><strong>2. Estimasi Parameter</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-parameter">Penjelasan Parameter:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uji-diagnostik"><strong>3. Uji Diagnostik</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretasi"><strong>4. Interpretasi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-sarima">Model SARIMA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deployement">Deployement</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-model">Menyimpan model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website">Website</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ahmad Noval M
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
