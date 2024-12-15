@@ -421,7 +421,7 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing">Data Prepocessing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">Seleksi Fitur</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-recursive-multi-step-forecasting">Menyiapkan Data untuk Recursive Multi-step Forecasting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-direct-multi-step-forecasting">Menyiapkan Data untuk Direct Multi-step Forecasting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-input-output-untuk-model-direct-forcasting">Membuat Input-Output untuk Model Direct Forcasting</a></li>
 </ul>
 </li>
@@ -1942,8 +1942,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <p>1199 rows × 3 columns</p>
 </div></div></div>
 </div>
-<section id="menyiapkan-data-untuk-recursive-multi-step-forecasting">
-<h3>Menyiapkan Data untuk Recursive Multi-step Forecasting<a class="headerlink" href="#menyiapkan-data-untuk-recursive-multi-step-forecasting" title="Link to this heading">#</a></h3>
+<section id="menyiapkan-data-untuk-direct-multi-step-forecasting">
+<h3>Menyiapkan Data untuk Direct Multi-step Forecasting<a class="headerlink" href="#menyiapkan-data-untuk-direct-multi-step-forecasting" title="Link to this heading">#</a></h3>
+<p>Standarisasi Data</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span> <span class="c1"># type: ignore</span>
@@ -1955,10 +1956,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
+<p>Split Data Train 80% Test 20%</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Misalnya, 80% data untuk pelatihan dan 20% untuk pengujian</span>
-<span class="n">train_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scaled_df</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">train_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scaled_df</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">)</span>
 <span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="o">=</span> <span class="n">scaled_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">train_size</span><span class="p">],</span> <span class="n">scaled_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train_size</span><span class="p">:]</span>
 </pre></div>
 </div>
@@ -2050,6 +2051,137 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <h1>Modelling<a class="headerlink" href="#modelling" title="Link to this heading">#</a></h1>
 <section id="lstm">
 <h2>LSTM<a class="headerlink" href="#lstm" title="Link to this heading">#</a></h2>
+<p>Perhitungan Manual LSTM Multistep</p>
+<p>Model LSTM (Long Short-Term Memory) digunakan untuk memprediksi serangkaian nilai masa depan berdasarkan data historis. Dalam hal ini, kita memprediksi nilai <code class="docutils literal notranslate"><span class="pre">heart_rate_bpm</span></code> untuk 10 langkah waktu ke depan (multistep). Model ini menerima input berupa data deret waktu multivariate (beberapa fitur) dan memprediksi beberapa langkah masa depan sekaligus.</p>
+<p><strong>Notasi</strong></p>
+<ul>
+<li><p>Misalkan kita memiliki data historis dalam bentuk deret waktu:
+$<span class="math notranslate nohighlight">\(
+\{x_1, x_2, x_3, \dots, x_T\}
+\)</span>$
+di mana (x_t) adalah nilai detak jantung pada waktu (t).</p></li>
+<li><p>Input ke model adalah urutan data historis selama <code class="docutils literal notranslate"><span class="pre">steps</span></code> waktu. Dengan kata lain, kita memberikan input berupa urutan data (X = {x*{t-steps}, x*{t-steps+1}, \dots, x_{t-1}}) untuk memprediksi langkah waktu berikutnya.</p></li>
+<li><p>Output model adalah prediksi detak jantung untuk langkah waktu (t+1, t+2, \dots, t+steps), yaitu:</p>
+<div class="math notranslate nohighlight">
+\[
+  y_{t+1}, y_{t+2}, \dots, y_{t+steps}
+  \]</div>
+<p><strong>Prediksi Multistep</strong></p>
+</li>
+</ul>
+<p>Misalkan kita memiliki data historis selama 10 langkah (misalnya 10 titik waktu sebelumnya) sebagai input. Model LSTM akan menghasilkan prediksi untuk langkah ke depan. Prediksi ini dilakukan secara bersamaan untuk beberapa langkah ke depan, yang disebut sebagai <strong>multistep forecasting</strong>.</p>
+<p>Jika kita memprediksi 10 langkah ke depan, maka output model adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y}_t = [ \hat{y}_{t+1}, \hat{y}_{t+2}, \dots, \hat{y}_{t+steps} ]
+\]</div>
+<p>di mana (\hat{y}_{t+k}) adalah prediksi untuk langkah waktu ke-(k) ke depan.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Contoh Input dan Output</strong></p></li>
+</ol>
+<p>Misalkan kita memiliki urutan data berikut yang hanya terdiri dari 5 langkah waktu (<code class="docutils literal notranslate"><span class="pre">steps=5</span></code>) dan ingin memprediksi 3 langkah ke depan (<code class="docutils literal notranslate"><span class="pre">multistep=3</span></code>).</p>
+<p>#<strong>Data Input</strong>
+Misalkan kita memiliki data sebagai berikut untuk 5 langkah waktu sebelumnya (dalam unit tertentu, misalnya detak jantung <code class="docutils literal notranslate"><span class="pre">bpm</span></code>):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+X = \left[\begin{array}{ccccc}
+x_1 &amp; x_2 &amp; x_3 &amp; x_4 &amp; x_5 \\
+80 &amp; 82 &amp; 81 &amp; 85 &amp; 88 \\
+\end{array}\right]
+\end{split}\]</div>
+<p>#<strong>Prediksi Multistep</strong>
+Kita ingin memprediksi 3 langkah ke depan berdasarkan data input ini.</p>
+<p>Misalkan setelah pelatihan, model LSTM menghasilkan prediksi untuk langkah-langkah berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y}_6 = 90, \quad \hat{y}_7 = 92, \quad \hat{y}_8 = 93
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Proses Perhitungan Manual</strong></p></li>
+</ol>
+<p>Untuk menghitung prediksi secara manual, kita akan menyederhanakan cara kerja LSTM menjadi serangkaian operasi yang lebih mudah dipahami. Model LSTM memproses input dan menghitung output menggunakan beberapa parameter, seperti bobot (weight) dan bias. Pada langkah-langkah berikut, kita akan menghitung output prediksi multistep dengan beberapa asumsi dan simplifikasi.</p>
+<p><strong>Langkah 1: Prediksi untuk Langkah ke-6</strong>
+Untuk menghitung prediksi untuk langkah ke-6 ((\hat{y}_6)), kita menggunakan data historis (dari langkah 1 hingga langkah 5) dan bobot (W) yang telah dilatih.</p>
+<p>Proses sederhananya adalah sebagai berikut:</p>
+<ol class="arabic simple">
+<li><p>Mengalikan input dengan bobot (W_1), menambahkan bias (b_1), dan melewatkannya melalui fungsi aktivasi, misalnya <code class="docutils literal notranslate"><span class="pre">tanh</span></code> atau <code class="docutils literal notranslate"><span class="pre">sigmoid</span></code>:
+$<span class="math notranslate nohighlight">\(
+h_6 = \text{tanh}(W_1 \cdot X_5 + b_1)
+\)</span>$</p></li>
+<li><p>Output (h_6) ini digunakan untuk memprediksi nilai (\hat{y}_6):
+$<span class="math notranslate nohighlight">\(
+\hat{y}_6 = W_2 \cdot h_6 + b_2
+\)</span>$</p></li>
+</ol>
+<p>Misalkan setelah perhitungan model menghasilkan prediksi (\hat{y}_6 = 90).</p>
+<p><strong>Langkah 2: Prediksi untuk Langkah ke-7</strong>
+Langkah yang sama diterapkan untuk prediksi berikutnya. Pada langkah ini, kita menggunakan output dari langkah sebelumnya ((\hat{y}_6)) sebagai input tambahan.</p>
+<ol class="arabic simple">
+<li><p>Menggunakan (h_6) untuk mempengaruhi prediksi langkah ke-7 ((\hat{y}_7)):
+$<span class="math notranslate nohighlight">\(
+h_7 = \text{tanh}(W_1 \cdot [X_5, \hat{y}_6] + b_1)
+\)</span>$</p></li>
+<li><p>Menghasilkan output prediksi (\hat{y}_7):
+$<span class="math notranslate nohighlight">\(
+\hat{y}_7 = W_2 \cdot h_7 + b_2
+\)</span>$</p></li>
+</ol>
+<p>Misalkan hasilnya (\hat{y}_7 = 92).</p>
+<p><strong>Langkah 3: Prediksi untuk Langkah ke-8</strong>
+Demikian juga, prediksi untuk langkah ke-8 dilakukan dengan cara yang sama, menggunakan (\hat{y}_7) sebagai input tambahan:</p>
+<div class="math notranslate nohighlight">
+\[
+h_8 = \text{tanh}(W_1 \cdot [X_5, \hat{y}_7] + b_1)
+\]</div>
+<p>Output akhirnya adalah prediksi untuk langkah ke-8:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{y}_8 = W_2 \cdot h_8 + b_2
+\]</div>
+<p>Misalkan hasil akhirnya adalah (\hat{y}_8 = 93).</p>
+<p><strong>Evaluasi Model</strong></p>
+<p>Evaluasi model dilakukan dengan menghitung <strong>Root Mean Squared Error (RMSE)</strong> dan <strong>Mean Absolute Percentage Error (MAPE)</strong> antara nilai prediksi dan nilai aktual.</p>
+<p>#4.1 <strong>Root Mean Squared Error (RMSE)</strong></p>
+<p>RMSE digunakan untuk mengukur kesalahan prediksi dalam satuan yang sama dengan data asli. Untuk setiap langkah (k), RMSE dihitung sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{RMSE}_k = \sqrt{\frac{1}{N} \sum_{i=1}^{N} \left( \hat{y}_{i,k} - y_{i,k} \right)^2}
+\]</div>
+<p>di mana:</p>
+<ul>
+<li><p>(N) adalah jumlah sampel.</p></li>
+<li><p>(\hat{y}_{i,k}) adalah nilai prediksi pada langkah ke-(k) untuk sampel ke-(i).</p></li>
+<li><p>(y_{i,k}) adalah nilai aktual pada langkah ke-(k) untuk sampel ke-(i).</p>
+<p><strong>Mean Absolute Percentage Error (MAPE)</strong></p>
+</li>
+</ul>
+<p>MAPE mengukur kesalahan relatif antara nilai prediksi dan nilai aktual, dihitung dalam persen. Untuk setiap langkah (k), MAPE dihitung sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{MAPE}_k = \frac{1}{N} \sum_{i=1}^{N} \left| \frac{\hat{y}_{i,k} - y_{i,k}}{y_{i,k}} \right| \times 100
+\]</div>
+<p>di mana:</p>
+<ul>
+<li><p>(N) adalah jumlah sampel.</p></li>
+<li><p>(\hat{y}_{i,k}) adalah nilai prediksi pada langkah ke-(k) untuk sampel ke-(i).</p></li>
+<li><p>(y_{i,k}) adalah nilai aktual pada langkah ke-(k) untuk sampel ke-(i).</p>
+<p><strong>Langkah Implementasi di Kode</strong></p>
+</li>
+</ul>
+<p>Pada kode yang telah diberikan, kita mempersiapkan data untuk pelatihan dan pengujian, melatih model LSTM, dan kemudian mengevaluasi model menggunakan RMSE dan MAPE. Berikut adalah langkah-langkah yang dilakukan:</p>
+<ol class="arabic simple">
+<li><p><strong>Persiapan Data:</strong>
+Fungsi <code class="docutils literal notranslate"><span class="pre">create_multi_output_data</span></code> membagi data menjadi sekuens input (<code class="docutils literal notranslate"><span class="pre">X</span></code>) dan target output (<code class="docutils literal notranslate"><span class="pre">y</span></code>), di mana output berisi 10 langkah prediksi untuk setiap input.</p></li>
+<li><p><strong>Membangun Model LSTM:</strong>
+Model LSTM dibangun dengan input berupa urutan data historis selama <code class="docutils literal notranslate"><span class="pre">steps</span></code> waktu dan output berupa prediksi untuk 10 langkah ke depan.</p></li>
+<li><p><strong>Evaluasi Model:</strong>
+Setelah model dilatih, kita menghitung RMSE dan MAPE untuk setiap langkah prediksi ke depan dan menampilkan hasilnya.</p></li>
+</ol>
+<hr class="docutils" />
+<ol class="arabic simple" start="6">
+<li><p><strong>Visualisasi</strong></p></li>
+</ol>
+<p>Untuk memeriksa kualitas model, kita dapat memvisualisasikan perbandingan antara nilai prediksi dan nilai aktual untuk setiap langkah waktu.</p>
 <p>Menggunakan LSTM dengan satu lapisan tersembunyi dan lapisan Dropout untuk mencegah overfitting. Output layer memiliki 10 neuron untuk menghasilkan 10 prediksi sekaligus.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2574,7 +2706,7 @@ GRU - MAPE Step 10: 20.81%
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-prepocessing">Data Prepocessing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mengatasi-outlier">Mengatasi Outlier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">Seleksi Fitur</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-recursive-multi-step-forecasting">Menyiapkan Data untuk Recursive Multi-step Forecasting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-direct-multi-step-forecasting">Menyiapkan Data untuk Direct Multi-step Forecasting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-input-output-untuk-model-direct-forcasting">Membuat Input-Output untuk Model Direct Forcasting</a></li>
 </ul>
 </li>
