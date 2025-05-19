@@ -1,3 +1,3 @@
 # Rangkuman
 
-https://vall-here.github.io/Proyek-sains-data-TA/
+https://vall-here.github.io/proyek-sains-data/
